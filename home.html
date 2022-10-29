@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pro life Academia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/9ede36cb5d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="nav-principal">
+
+        <a class="alinha-esquerda"> <i class="fa-solid fa-bars"> </i> </a>
+
+        <a class="alinha-direita"> <i class="fa-solid fa-bell"> </i> </a>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="box-clima">
+            <div>
+                <div class="welcome">
+                    Bem-vindo!
+                    <span id="dia" class="day-week"></span>
+                </div>
+            </div>
+            <!-- <div class="lua"></div> -->
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var scrollAnterior = window.pageYOffset;
+
+        window.onscroll = function () {
+            var scrollAtual = window.pageYOffset;
+            if (scrollAnterior > scrollAtual) {
+                document.getElementsByClassName("nav-principal")[0].style.top = '0px';
+            } else {
+                document.getElementsByClassName("nav-principal")[0].style.top = '-55px';
+            }
+            scrollAnterior = scrollAtual;
+        }
+
+        const diasemana = ["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"];
+
+        const d = new Date();
+        console.log(diasemana[d.getDay()]);    
+
+    </script>
+
+</body>
+
+</html>
