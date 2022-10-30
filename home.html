@@ -27,15 +27,14 @@
     </nav>
 
     <div class="container">
-
         <div class="box-clima">
             <div>
                 <div class="welcome">
-                    Bem-vindo!
+                    <!-- Bem-vindo! -->
                     <span id="dia" class="day-week"></span>
                 </div>
             </div>
-            <!-- <div class="lua"></div> -->
+             <div class="lua"></div> 
         </div>
 
     </div>
@@ -59,6 +58,14 @@
 
         const d = new Date();
         console.log(diasemana[d.getDay()]);
+
+
+        var element = document.querySelector(".lua");
+        var text = document.createTextNode("Bem Vindo!");
+
+        element.appendChild(text);
+
+        
 
     </script>
 
