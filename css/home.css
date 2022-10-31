@@ -5,11 +5,17 @@
 }
 
 body{
-    background-color: #94dfff;
+    background-color: #004777;
+    
+}
+
+.espacofundo {
+    width: 100%;
+    height: 5vh;
 }
 
 .nav-principal {
-    background-color: #004777;
+    background-color: #0075B3;
     position: fixed;
     top: 0px;
     transition: top 0.3s;
@@ -35,44 +41,181 @@ body{
     float: right;
 }
 
-.container {
+.welcome {
     display: flex;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 10vh;
+    height: 20vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: linear-gradient(180deg, #0077B6 0%, #004777 100%);
+    background-image: url('../img/bem-vindo.png');
+    background-size: contain;
+}
+
+.bemvindo {
+    font-size: 26px;
+    color: #D2DCE9;
+}
+
+.day-week {
+    font-size: 20px;
+    color: #A5C4EB;
+}
+
+.container {
+    background-color: #004777;
+    height: 70vh; 
+    padding-top: 5vh;
     padding-bottom: 3vh;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-.box-clima {
-    padding: 20px;    
-    height: 40vh;
-    width: 80vw;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #0077B6 0%, #324664 100%); 
-
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-around; */
-    
+.box-chart {
+    display: flex;
+   
 }
 
-.lua {
+.texto-ocupacao {
+    align-self: center;
+    font-size: 30px;
+    padding: 30px;
+    color: #D2DCE9;
+}
+
+.donut {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.instalment1 .donut-case {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
     position: absolute;
+    top: 0;
+    left: 0;
+    background-clip: border-box;
+    overflow: hidden;
+}
+
+.instalment1 .donut-case::before {
+    content: "";
+    clip: rect(0 200px 100px 0);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(180deg);
+    background: #00AFB5;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.instalment1 .donut-case::after {
+    content: "";
+    clip: rect(0 100px 200px 0);
+    -webkit-transform: rotate(327.6deg);
+    transform: rotate(360deg);
+    background: #00AFB5;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.donut-white {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: #004777;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.donut-text {
+    top: 25px;
+    left: 25px;
     width: 150px;
     height: 150px;
-    left: 573px;
-    top: 225px;
-    border-radius: 100%;
-    background: linear-gradient(180deg, #A5C4EB -10.71%, rgba(81, 234, 255, 0) 100%);
-    top: 16%;
-    left: 13%;
-  
+    background: #004777;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
 }
 
-.texto-cima {
-    font-size: 20px;
+.donut-text span {
+    color: #D2DCE9;
     font-weight: 600;
-    color: #c4c4c4;
+    font-size: 30px;
+}
+
+
+.previsao-semanal{
+    background-color: transparent;
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.previsao-semanal-tudo{
+    background-color: #76adeb;
+    height: 12vh;
+    border-radius: 10px;
+    display: flex;
+    font-size:20px;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+.previsao-semanal-titulo{
+    padding-bottom: 15px;
+    font-size: 21px;
+    color: #D2DCE9;
+    align-self: center;
+}
+.previsao-semanal-conteudo{
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:1px solid black;
+    width:20%;
+}
+
+.previsao-semanal-conteudo:nth-child(5){
+    border-right:none;
+}
+
+
+.copyform {
+    padding: 20px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textocpy {
+    color: #D2DCE9;
+    font-size: 20px;
+}
+
+.iconcpy{
+    color: #D2DCE9;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background: #76ABEB;
 }
