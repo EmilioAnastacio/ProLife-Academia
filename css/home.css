@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #94dfff;
 }
 
 .nav-principal {
-    background-color: #30706F;
+    background-color: #004777;
     position: fixed;
     top: 0px;
     transition: top 0.3s;
@@ -34,7 +39,6 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    width: 90%;
     padding-top: 10vh;
     padding-bottom: 3vh;
     padding-left: 5vw;
@@ -42,7 +46,7 @@
 }
 
 .box-clima {
-    padding: 20px;
+    padding: 20px;    
     height: 40vh;
     width: 80vw;
     border-radius: 10px;
@@ -55,15 +59,20 @@
 }
 
 .lua {
+    position: absolute;
     width: 150px;
     height: 150px;
     left: 573px;
     top: 225px;
     border-radius: 100%;
     background: linear-gradient(180deg, #A5C4EB -10.71%, rgba(81, 234, 255, 0) 100%);
+    top: 16%;
+    left: 13%;
+  
+}
 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.texto-cima {
+    font-size: 20px;
+    font-weight: 600;
+    color: #c4c4c4;
 }
