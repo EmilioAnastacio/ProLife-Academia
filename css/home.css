@@ -38,6 +38,7 @@ body{
 .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     height: 100vh;
     padding-top: 10vh;
     padding-bottom: 3vh;
@@ -51,11 +52,6 @@ body{
     width: 80vw;
     border-radius: 10px;
     background: linear-gradient(180deg, #0077B6 0%, #324664 100%); 
-
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-around; */
-    
 }
 
 .lua {
@@ -68,11 +64,55 @@ body{
     background: linear-gradient(180deg, #A5C4EB -10.71%, rgba(81, 234, 255, 0) 100%);
     top: 16%;
     left: 13%;
-  
 }
 
 .texto-cima {
     font-size: 20px;
     font-weight: 600;
     color: #c4c4c4;
+}
+
+.previsao-semanal{
+    background-color: transparent;
+    height: 40vh;
+    width: 80vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.previsao-semanal-tudo{
+    background-color: #76adeb;
+    height: 12vh;
+    width: 80vw;
+    border-radius: 10px;
+    display: flex;
+    font-size:20px;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+.previsao-semanal-titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+.previsao-semanal-conteudo{
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:1px solid black;
+    width:20%;
+}
+
+
+
+.previsao-semanal-conteudo:nth-child(5){
+    border-right:none;
+}
+
+.linha{
+    width: 0.5px;
+    height: 100%;
+    background-color: #020202;
 }
