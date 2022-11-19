@@ -1,0 +1,29 @@
+tipos de variaveis em JS
+
+let - tem restriçoes de escopo;
+var - nao tem regras
+const - e uma constante
+
+
+funçoes
+///////////////////////////
+function nome_da_funcao(){   
+  bloco de comando
+}
+///////////////////////////
+
+vazia
+function vazia(){
+  consolo.log(nome);
+}
+
+imperfeito
+function imérfeita(nome){
+  console.log(nome);
+}
+
+perfeita
+function perfeita(nome,sobrenome){
+  console.log(nome);
+  return nome + sobrenome
+}

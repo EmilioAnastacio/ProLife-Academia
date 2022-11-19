@@ -1,0 +1,193 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  /* background: linear-gradient(150deg, #d2eef0 0%, #a5ffd7 100%); */
+  background-color: burlywood;
+}
+
+.container-personais {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  height: 70vh;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-notificacao button {
+  border: none;
+  background-color: #09629e;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.botoes-altera-tabela {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 75%;
+}
+
+.botoes-altera-tabela > button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.container-personais-conteudo-tabela {
+  display: flex;
+  justify-content: center;
+}
+
+.tabela-lista {
+  width: 80%;
+  overflow: auto;
+  table-layout: fixed;
+  border-spacing: 0px;
+}
+
+.tabela-lista td {
+  padding-left: 20px;
+}
+
+.tabela-lista > thead {
+  background-color: #004777;
+  color: white;
+  font-size: 40px;
+}
+
+.tabela-lista > tbody {
+  font-size: 24px;
+}
+
+.tabela-lista > tbody > tr > td img{
+  width: 30px;
+  padding-left: 50%;
+  cursor: pointer;
+}
+
+ .tabela-lista > tbody > tr:nth-child(even) {
+  background-color: #FFFFFF;
+} 
+
+ .tabela-lista > tbody > tr:nth-child(odd) {
+  background-color: #D9D9D9;
+} 
+
+ .tabela-lista > tbody > tr{
+  height: 45px;
+ }
+
+.tabela-lista > thead > tr > th {
+  padding-bottom: 10px;
+}
+
+.botoes-altera-tabela button:hover {
+  background-color: #004777;
+  color: white;
+  transition: 1s;
+}
+
+.botao-notificacao button:hover {
+  animation: 1s;
+  background-color: #2a73af;
+}
+
+.img-more{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.img-more div{
+  width: 50px;
+  height: 50px;
+  background-color: #004777;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  
+}
+
+.img-more div:hover{
+  animation: 1s;
+  background-color: #2a73af;
+}
+
+.img-more img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------
+---------------------tabela em blocos---------------------
+----------------------------------------------------------*/
+
+.container-personais-conteudo-blocos {
+  display: none;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  height: 100vh;
+  transition-property: all;
+}
+
+.blocos-conteudo {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.bloco_1 {
+  background-color: #cfd4d8; /*#004777*/
+  border: 1px solid black;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.bloco_1 div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bloco_1 img{
+  width: 40px;
+  height: 40px;
+  grid-column-start: 3;
+  margin: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.bloco_1 img:hover{
+  animation: 1s;
+  scale: 1.02;
+}
+
+.bloco_1:hover {
+  animation: 1s;
+  scale: 1.01;
+}
+
+.bloco_1 p {
+  padding: 10px;
+}
