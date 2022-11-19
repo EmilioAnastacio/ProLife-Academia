@@ -30,22 +30,27 @@ body{
 .login-tudo{
     background-color: #004777;
     height: 40%;
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
 }
-::placeholder{
-    color:white;
-}
+
 .login-titulo{
     color:white;
     text-transform: uppercase;
 }
+
 .login-titulo p{
-    padding-bottom: 10%;
+  padding-bottom: 5%;
+}
+
+.login-titulo-mensagem p{
+  color:white;
+  font-size: small;
+  padding-bottom: 5%;
 }
 
 .login-conteudo{
@@ -55,15 +60,9 @@ body{
     
 }
 
-.email-login{
+.senha-login{
     padding:10px;
-}
-
-.email-login input{
-    background: rgba(0, 0, 0, 0);
-    border:none;
-    border-bottom: 1px solid black;;
-    outline: none;
+    
 }
 
 .senha-login input{
@@ -77,7 +76,6 @@ body{
 .botao-login{
     padding:5%;
 }
-
 .botao-login button{
     background-color: #0038ff4a;
     padding: 10px;
@@ -86,7 +84,6 @@ body{
     color: white;
     cursor: pointer;
 }
-
 
 .botao-login input{
     background: rgba(0, 0, 0, 0);
