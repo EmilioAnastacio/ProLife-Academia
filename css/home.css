@@ -178,6 +178,7 @@ body{
     font-size:20px;
     font-weight: 600;
     justify-content: space-evenly;
+    z-index: 2;
 }
 .previsao-semanal-titulo{
     padding-bottom: 15px;
@@ -218,4 +219,11 @@ body{
     padding: 20px;
     border-radius: 50%;
     background: #76ABEB;
+}
+
+.imgWeb{
+    width: 10%;
+    height: 10%;
+    opacity: 20%;
+    z-index: -1;
 }
