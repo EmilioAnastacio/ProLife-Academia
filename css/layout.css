@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --title-color: #00629A;
+}
+
+* {
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* MENU */
+
+.side-menu {
+    position: fixed;
+    background-color: #004777;
+    transition: width 600ms ease;
+}
+
+.menu-contain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-contain li {
+    text-align: center;
+    width: 100%;
+}
+
+.menu-opc:first-child {
+    margin-bottom: auto;
+}
+
+.menu-opc:last-child {
+    margin-top: auto;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #b2c7d6;
+    text-decoration: none;
+    transition: 600ms;
+}
+
+.menu-button:hover {
+    background-color: #061d2c;
+}
+
+.menu-button span {
+    display: none;
+}
+
+.menu-button i {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-bar .option {
+
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #b2c7d6;
+    text-decoration: none;
+    transition: 600ms;
+
+}
+
+.nav-bar .option:first-child {
+    margin-right: auto;
+}
+
+.nav-bar .option:first-child a {
+    justify-content: flex-start;
+}
+
+.nav-bar .option a {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--title-color);
+    text-decoration: none;
+    font-weight: 500;
+    width: 5rem;
+}
+.nav-bar .option i {
+    font-size: 2rem;
+}
+/* .nav-bar .option .profile-img {
+    width: 2rem;
+} */
+
+
+@media only screen and (max-width: 700px) {
+    .side-menu {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        overflow-x: auto;
+    }
+
+    .menu-contain {
+        flex-direction: row;
+    }
+
+    .menu-button {
+        justify-content: center;
+    }
+
+    .menu-button span {
+        display: none;
+    }
+
+    .menu-opc:last-child {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 700px) {
+    .side-menu {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .side-menu:hover {
+        width: 16rem;
+    }
+
+    .side-menu:hover span {
+        display: block;
+        animation: fadeIn 600ms;
+    }
+
+    .nav-bar {
+        margin-left: 5rem;
+    }
+
+    .nav-bar .option:last-child {
+        display: none;
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
