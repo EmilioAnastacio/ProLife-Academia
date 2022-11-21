@@ -18,10 +18,10 @@ const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julh
 
 const d = new Date();
 
-var element = document.getElementById('dia');
+var element = document.getElementsByClassName('date')[0];
 element.innerHTML = diasemana[d.getDay()] + ', ' + d.getDate() + ' de ' + meses[d.getMonth()];
 
- var temporizador = d.getHours();
+var temporizador = d.getHours();
 var hora = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
 // console.log(hora);
 
