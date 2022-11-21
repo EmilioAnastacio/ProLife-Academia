@@ -1,0 +1,202 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c9cfd3b7;
+    /* background-image: url(../img/Login.png);
+    background-repeat: no-repeat; */
+}
+
+.container-login{
+    /* background-image: linear-gradient(90deg, #A4E5E4 100%, #5B9594 100%, #30706F 100%); */
+    height: 100vh; 
+    padding-bottom: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-tudo{
+    background-color: #004777;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-tudo > .login-titulo > img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+::placeholder{
+    color:rgb(0, 0, 0);
+}
+
+.login-titulo{
+    color:white;
+    text-transform: uppercase;
+}
+
+.login-titulo p{
+    font-size: 25px;
+}
+
+.login-conteudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.email-login{
+    padding:10px;
+}
+
+input{
+    padding: 10px;
+}
+
+.email-login input{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgb(253, 249, 249);
+    outline: none;
+    color: white;
+}
+
+.senha-login input{
+   background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgb(253, 249, 249);
+    outline: none;
+    color: white;
+}
+
+.botao-login{
+    padding:5%;
+    text-align: center;
+}
+
+.botao-login button:hover{
+    animation: 1s;
+    scale: 1.02;
+}
+
+::placeholder{
+    color:white;
+}
+
+.botao-esquceu-senha a{
+    color: white;
+}
+
+.botao-login button{
+    background-color: #ffffff4a;
+    padding: 10px;
+    width: 35%;
+    border: 1px solid rgba(0, 0, 0, 0.601);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius:3px;
+}
+
+.botao-login input{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+/* -------------------esquece a senha------------------ */
+
+.container-esqueceusenha{
+    display: none;
+    background-image: linear-gradient(90deg, #A4E5E4 100%, #5B9594 100%, #30706F 100%);
+
+     /* background-color: #004777; */
+    height: 100vh; 
+    /* width: 100vw; */
+    /* padding-top: 15vh; */
+    padding-bottom: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-tudo-esqueceusenha{
+    background-color: #004777;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-titulo-esqueceusenha{
+    color:white;
+    text-transform: uppercase;
+}
+.login-titulo-esqueceusenha p{
+    padding-bottom: 10%;
+}
+
+.login-conteudo-esqueceusenha{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.email-login-esqueceusenha input{
+    background: rgba(0, 0, 0, 0);
+    border:none;
+    border-bottom: 1px solid black;;
+    outline: none;
+}
+
+.login-titulo-mensagem-esqueceusenha p{
+  color:white;
+  font-size: small;
+  padding-bottom: 10%;
+  
+}
+
+.botao-login-esqueceusenha{
+    padding:5%;
+}
+
+.botao-login-esqueceusenha button{
+    background-color: #0038ff4a;
+    padding: 10px;
+    width: 35%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-login-esqueceusenha input{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}

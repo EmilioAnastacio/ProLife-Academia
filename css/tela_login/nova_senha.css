@@ -8,16 +8,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #004777;
+    background-color: #c9cfd3b7;
+    /* background-image: url(../img/Login.png); */
+    
 }
 
 .container{
-    background-image: linear-gradient(90deg, #A4E5E4 100%, #5B9594 100%, #30706F 100%);
-
-     /* background-color: #004777; */
+    /* background-image: linear-gradient(90deg, #A4E5E4 100%, #5B9594 100%, #30706F 100%); */
     height: 100vh; 
-    /* width: 100vw; */
-    /* padding-top: 15vh; */
     padding-bottom: 3vh;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -29,8 +27,8 @@ body{
 
 .login-tudo{
     background-color: #004777;
-    height: 40%;
-    width: 50%;
+    height: 60%;
+    width: 40%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,50 +37,58 @@ body{
 }
 
 .login-titulo{
-    color:white;
-    text-transform: uppercase;
+   padding-bottom: 3%;
 }
 
-.login-titulo p{
-  padding-bottom: 5%;
+.login-titulo img{
+  width: 50px;
 }
 
 .login-titulo-mensagem p{
   color:white;
   font-size: small;
   padding-bottom: 5%;
+  font-size: 17px;
 }
 
 .login-conteudo{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .senha-login{
     padding:10px;
-    
 }
 
 .senha-login input{
     background: rgba(0, 0, 0, 0);
     border: none;
-    border-bottom: 1px solid black;;
+    border-bottom: 1px solid rgb(255, 255, 255);;
     outline: none;
-    
+    color: white;
+}
+
+::placeholder{
+    color:white;
+}
+
+input{
+    padding: 10px;
 }
 
 .botao-login{
     padding:5%;
 }
+
 .botao-login button{
-    background-color: #0038ff4a;
+    background-color: #ffffff4a;
     padding: 10px;
     width: 35%;
     border: none;
     color: white;
     cursor: pointer;
+    border-radius:3px;
 }
 
 .botao-login input{

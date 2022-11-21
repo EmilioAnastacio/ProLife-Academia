@@ -8,7 +8,9 @@ botao_tabela.addEventListener('click', tabela_lista);
 function tabela_lista(){
   const tabela_blocos = document.getElementById("tabela-blocos");
   const tabela_lista = document.getElementById("tabela-lista");
+  const tabela_toda = document.getElementById("imagem-more-tabela")
 
+  tabela_toda.style.display = 'block';
   tabela_lista.style.display = 'table';
   tabela_blocos.style.display = 'none';
 }
@@ -16,7 +18,9 @@ function tabela_lista(){
 function tabela_blocos(){
   const tabela_lista = document.getElementById('tabela-lista');
   const tabela_blocos = document.getElementById("tabela-blocos");
-  
+  const tabela_toda = document.getElementById("imagem-more-tabela")
+
+  tabela_toda.style.display = "none";
   tabela_lista.style.display = 'none';
   tabela_blocos.style.display = 'block';
 }
