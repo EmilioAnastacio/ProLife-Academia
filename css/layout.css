@@ -114,8 +114,9 @@ body {
     font-size: 1.8rem;
 }
 
-
-/* CONFIGURAÇÕES */
+main.container {
+    padding: 0 10px 0;
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -170,6 +171,10 @@ body {
 
     .nav-bar .option:last-child {
         display: none;
+    }
+
+    .container {
+        margin-left: 5rem;
     }
 
 }
