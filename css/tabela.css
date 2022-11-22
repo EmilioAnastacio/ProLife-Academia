@@ -3,17 +3,10 @@
   margin: 0px;
 }
 
-body {
-  /* background: linear-gradient(150deg, #d2eef0 0%, #a5ffd7 100%); */
-  background-color: burlywood;
-}
-
 .container-personais {
   margin-left: 5vw;
   margin-right: 5vw;
   height: 70vh;
-
-
 }
 
 header {
@@ -48,7 +41,7 @@ header {
 }
 
 .container-personais-conteudo-tabela {
-    display: flex ; /*!important*/
+    display: flex ;
     flex-direction: column;
     align-items: center;
 
@@ -56,13 +49,13 @@ header {
 }
 
 .tabela-lista {
-  width: 80%;
+  width: 87%;
   overflow: auto;
   table-layout: fixed;
   border-spacing: 0px;
 
   animation-name: fade;
-    animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .tabela-lista td {
@@ -72,9 +65,15 @@ header {
 .tabela-lista > thead {
   background-color: #004777;
   color: white;
+  height: 40px;
   font-size: 40px;
   text-align: left;
 }
+
+.botao-notificacao button i{
+  font-size: 30px;
+  color: white;
+} 
 
 .tabela-lista > tbody {
   font-size: 24px;
@@ -96,17 +95,16 @@ header {
 
 .tabela-lista > tbody > tr:hover {
   animation: 1s;
-  /* scale: 1.01; */
   opacity: 0.80;
 }
 
- .tabela-lista > tbody > tr{
+.tabela-lista > tbody > tr{
   height: 45px;
- }
+}
 
 .tabela-lista > thead > tr > th {
-    padding-bottom: 5px;
-    padding-left: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
 }
 
 .botoes-altera-tabela button:hover {
@@ -121,13 +119,11 @@ header {
 }
 
 .img-more-tabela{
-  width: 80%;
+  width: 87%;
   height: 70px;
   display: flex;
   justify-content: flex-end;
-  /* justify-content: center; */
   align-items: center;
-
 }
 
 .img-more-tabela div{
@@ -180,22 +176,37 @@ header {
 }
 
 .bloco_1 {
-  background-color: #cfd4d8; /*#004777*/
-  border: 1px solid black;
-  width: 30%;
-  font-size: 24px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
+  background-color: #cfd4d8;
+    border: 1px solid black;
+    width: 30%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 1vh;
 }
 
-.bloco_1 div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.imagem-do-usuario img{
+  width: 100px;
+  height: 100px;
 }
 
-.bloco_1 img{
+.imagem-editar-usuario { 
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+} 
+
+.imagem-icone-blocos {
+      display: flex;
+    justify-content: center;
+}
+
+.imagem-editar-usuario img{
   width: 40px;
   height: 40px;
   grid-column-start: 3;
@@ -203,10 +214,11 @@ header {
   cursor: pointer;
 }
 
+/* testes foram feitos
 .bloco_1 img:hover{
   animation: 1s;
   scale: 1.02;
-}
+} */
 
 .bloco_1:hover {
   animation: 1s;
@@ -222,7 +234,6 @@ header {
   height: 70px;
   display: flex;
   justify-content: flex-end;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -251,6 +262,10 @@ header {
   cursor: pointer;
 }
 
+.imagem-editar-usuario img:hover{
+  scale:1.1;
+  animation:1s;
+}
 
 @keyframes fade{
 
