@@ -9,7 +9,7 @@
   height: 70vh;
 }
 
-header {
+.header-blocos {
   height: 100px;
   display: flex;
   justify-content: center;
@@ -27,25 +27,28 @@ header {
 
 .botoes-altera-tabela {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   gap: 10px;
-  width: 75%;
+  width: 1360px;
 }
 
 .botoes-altera-tabela > button {
-    width: 150px;
+    width: 80px;
     height: 50px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
 }
 
+.botoes-altera-tabela > button > i {
+  font-size: 30px;
+  color:#004777;
+}
+
 .container-personais-conteudo-tabela {
     display: flex ;
     flex-direction: column;
     align-items: center;
-
-    
 }
 
 .tabela-lista {
@@ -111,6 +114,30 @@ header {
   background-color: #004777;
   color: white;
   transition: 1s;
+}
+
+.div-barra-de-busca{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.div-barra-de-busca input{
+  width:50%;
+  height: 60%;
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+
+.div-barra-de-busca button{
+  width: 40px;
+  height: 35px;
+  border: 1.4px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .botao-notificacao button:hover {
