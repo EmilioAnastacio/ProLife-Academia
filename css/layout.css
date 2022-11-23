@@ -109,9 +109,15 @@ body {
     text-decoration: none;
     font-weight: 500;
     width: 5rem;
+    cursor: default
 }
+
 .nav-bar .option i {
     font-size: 1.8rem;
+}
+
+.option i{
+    cursor: pointer;
 }
 
 main.container {
