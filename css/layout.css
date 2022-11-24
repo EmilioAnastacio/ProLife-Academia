@@ -124,6 +124,158 @@ main.container {
     padding: 0 10px 0;
 }
 
+/* CONFIGURACOES*/
+
+.config{
+    color:white;
+    width: 20rem;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #004777;
+    padding: 10px;
+    /* transition: 600ms; */
+    animation: fadeIn 600ms;
+}
+
+.config >*:last-child {
+    margin-top: auto;
+}
+
+.config-header-titulo{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 25%;
+}
+
+.config-header-titulo img {
+    width:100px;
+}
+
+.config-header-titulo h1{
+    font-size: 24px;
+}
+
+.config-header-options{
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.config-header-options h1{
+    font-size: 25px;
+}
+
+.config-header-options button{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #b2c7d6;
+    cursor: pointer;
+}
+
+.config-header-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.config-header-footer button{
+    border: none;
+    width: 4vw;
+    background-color: transparent;
+}
+
+.config-header-footer > div > i{
+    color: white;
+}
+
+.config-header-footer-checkbox{
+    display: flex;
+    width: 6vw;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.fa-sun{
+    margin-left: 10px;
+}
+
+.fa-moon{
+    padding-right: 10px;
+}
+
+.exit button{
+    color:white;
+}
+
+/*checkbox toggle*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 @media only screen and (max-width: 700px) {
     .side-menu {
