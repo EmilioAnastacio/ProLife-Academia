@@ -37,20 +37,20 @@ function tabela_blocos() {
 
 const botao_add = document.getElementById("imagem-more-tabela");
 
-let contador = 0;
+let contador_personais = 0;
 
 botao_add.addEventListener("click", add_itens_tabela)
 
 
 function add_itens_tabela() {
-  contador ++;
+  contador_personais ++;
   const tabela = document.getElementById("tabela-lista")
   const corpo_tabela = document.getElementById("body-table");
   const blocos_conteudos = document.getElementById("blocos-conteudo");
   const div_blocos = document.createElement("div");
   div_blocos.className = "bloco_1";
   const tr = document.createElement("tr");
-  tr.id = `${contador}`
+  tr.id = `${contador_personais}`
 
   let campos = [
     {
