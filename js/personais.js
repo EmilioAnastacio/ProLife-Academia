@@ -47,7 +47,7 @@ function add_itens_tabela() {
   const tabela = document.getElementById("tabela-lista")
   const corpo_tabela = document.getElementById("body-table");
   const blocos_conteudos = document.getElementById("blocos-conteudo");
-  const div_blocos = createElement("div");
+  const div_blocos = document.createElement("div");
   div_blocos.className = "bloco_1";
   const tr = document.createElement("tr");
   tr.id = `${contador}`
