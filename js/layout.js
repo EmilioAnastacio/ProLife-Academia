@@ -1,21 +1,28 @@
-let contador = 1
+let contador = 0;
 
-const botao_config = document.getElementById("config-button")
+const botao_config_desk = document.getElementById("config-button-desk");
+const botao_config_mobile = document.getElementById("config-button-mob");
+const background_config = document.getElementsByClassName("background-config")[0];
+const config = document.querySelector("#config");
 
-botao_config.addEventListener("click", buttonConfig)
+botao_config_desk.addEventListener("click", buttonConfig);
+botao_config_mobile.addEventListener("click", buttonConfig);
+background_config.addEventListener("click", buttonConfig);
 
 function buttonConfig() {
-  const side_bar = document.querySelector("#config")
+  const side_bar = document.querySelector("#config");
 
-  contador = contador + 1
-  let resultado = contador % 2
+  if (contador % 2 == 0) {
 
-  if (resultado == 0) {
-    document.getElementsByClassName("config")[0].style.width = "20rem"
-    document.body.style.backgroundColor = "rgba(0,0,0,0.2)"
-    side_bar.style.display = "flex"
+    document.getElementsByClassName("config")[0].classList.add("active-config");
+    document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+    document.getElementsByClassName("background-config")[0].style.display = "block";
   } else {
-    side_bar.style.display = "none"
-    document.body.style.backgroundColor = "white"
+    document.getElementsByClassName("config")[0].classList.remove("active-config");
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+    document.getElementsByClassName("background-config")[0].style.display = "none";
+
   }
+
+  contador++;
 }

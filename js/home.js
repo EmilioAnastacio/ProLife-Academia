@@ -6,20 +6,4 @@
 // var element = document.getElementsByClassName('date')[0];
 // element.innerHTML = diasemana[d.getDay()] + ', ' + d.getDate() + ' de ' + meses[d.getMonth()];
 
-const ctx = document.getElementById('ocupacao');
-console.log(ctx);
-
-new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        datasets: [{
-        data: [25, 75],
-        borderWidth: 1
-        }]
-    },
-    options: {
-       
-    }
-});
-
 
