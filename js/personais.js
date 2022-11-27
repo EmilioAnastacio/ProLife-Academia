@@ -6,7 +6,7 @@ const tabela_img_blocos_altera = document.querySelector(".fa-table-cells");
 botao_blocos.addEventListener('click', tabela_blocos);
 botao_tabela.addEventListener('click', tabela_lista);
 
-function tabela_lista(){
+function tabela_lista() {
   const tabela_blocos = document.getElementById("tabela-blocos");
   const tabela_lista = document.getElementById("tabela-lista");
   const tabela_img_more = document.getElementById("imagem-more-tabela");
@@ -20,7 +20,7 @@ function tabela_lista(){
   tabela_blocos.style.display = 'none';
 }
 
-function tabela_blocos(){
+function tabela_blocos() {
   const tabela_lista = document.getElementById('tabela-lista');
   const tabela_blocos = document.getElementById("tabela-blocos");
   const tabela_img_more = document.getElementById("imagem-more-tabela");
@@ -34,3 +34,54 @@ function tabela_blocos(){
   tabela_lista.style.display = 'none';
   tabela_blocos.style.display = 'block';
 }
+
+const botao_add = document.getElementById("imagem-more-tabela");
+
+let contador = 0;
+
+botao_add.addEventListener("click", add_itens_tabela)
+
+
+function add_itens_tabela() {
+  contador ++;
+  const tabela = document.getElementById("tabela-lista")
+  const corpo_tabela = document.getElementById("body-table");
+  const blocos_conteudos = document.getElementById("blocos-conteudo");
+  const div_blocos = createElement("div");
+  div_blocos.className = "bloco_1";
+  const tr = document.createElement("tr");
+  tr.id = `${contador}`
+
+  let campos = [
+    {
+      nome: window.prompt("digite o nome"),
+      cargo: window.prompt("digite o cargo"),
+      salario: window.prompt("digite o salario"),
+      url_img: "../img/botao_editar.png",
+    }
+  ]
+
+  let conteudo = `<td>${campos[0].nome}</td>
+                  <td>${campos[0].cargo}</td>
+                  <td>$${campos[0].salario}</td>
+                  <td><img class="imagem-editar-abela" src="${campos[0].url_img}"alt=""></td>`
+
+  tr.innerHTML = conteudo
+  corpo_tabela.appendChild(tr);
+  tabela.appendChild(corpo_tabela);
+
+  let conteudo_blocos = `<div>
+            <p>Andre Gabriel Chang</p> 
+            <p>Personal</p>
+          </div>
+            <div class="imagem-icone-blocos">
+              <img src="../img/icone.png" alt="">
+            </div>
+          <div class="imagem-editar-usuario"><img src="../img/Group 18.png" alt=""></div>`
+
+          
+
+
+
+}
+
