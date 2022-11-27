@@ -13,7 +13,7 @@
 
 body {
     color: black;
-    background-color: white;
+    background-color: #fafafa;
     margin: 0;
     padding: 0;
 }
@@ -104,7 +104,6 @@ body {
 
 .nav-bar .option a {
     display: flex;
-    justify-content: space-around;
     color: var(--title-color);
     text-decoration: none;
     font-weight: 500;
@@ -116,7 +115,7 @@ body {
     font-size: 1.8rem;
 }
 
-.option i{
+.option i {
     cursor: pointer;
 }
 
@@ -126,155 +125,69 @@ main.container {
 
 /* CONFIGURACOES*/
 
-.config{
-    color:white;
-    width: 20rem;
+.config {
+    color: #fafafa;
     height: 100vh;
-    display: none;
-    flex-direction: column;
     position: fixed;
-    right: 0px;
     top: 0px;
     background-color: #004777;
-    padding: 10px;
-    /* transition: 600ms; */
-    animation: fadeIn 600ms;
+    transition: right 600ms ease;
 }
 
-.config >*:last-child {
-    margin-top: auto;
+.active-config {
+    right: 0 !important;
 }
 
-.config-header-titulo{
+.config .contain {
     display: flex;
-    align-items: center;
-    justify-content:space-between;
-    margin-bottom: 25%;
+    height: 100%;
+    flex-direction: column;
 }
 
-.config-header-titulo img {
-    width:100px;
-}
-
-.config-header-titulo h1{
-    font-size: 24px;
-}
-
-.config-header-options{
+.config-options {
     display: flex;
     flex-direction: column;
-    height: 12%;
     align-items: center;
     justify-content: space-around;
 }
 
-.config-header-options h1{
-    font-size: 25px;
+.config-options .title {
+    font-size: 1.2rem;
+    padding: 10%;
 }
 
-.config-header-options button{
-    width: 90%;
+.config-options button {
+    width: 100%;
     height: 50px;
     border-radius: 10px;
+    font-weight: bold;
     border: none;
-    background-color: #b2c7d6;
+    color: #004777;
+    background-color: #fafafa;
     cursor: pointer;
 }
 
-.config-header-footer{
+.config-footer {
+    padding: 10px;
+    margin-top: auto;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
+    justify-content: flex-end;
 }
 
-.config-header-footer button{
+.config-footer button {
     border: none;
     width: 4vw;
     background-color: transparent;
 }
 
-.config-header-footer > div > i{
-    color: white;
+.config-footer>div>i {
+    color: #fafafa;
 }
 
-.config-header-footer-checkbox{
-    display: flex;
-    width: 6vw;
-    justify-content: space-evenly;
-    align-items:center;
-}
-
-.fa-sun{
-    margin-left: 10px;
-}
-
-.fa-moon{
-    padding-right: 10px;
-}
-
-.exit button{
-    color:white;
-}
-
-/*checkbox toggle*/
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 17px;
-  width: 17px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+.exit button i {
+    color: #fafafa;
+    ;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -300,7 +213,25 @@ input:checked + .slider:before {
     .menu-opc:last-child {
         display: none;
     }
-    
+
+    .option a {
+        justify-content: flex-end;
+    }
+
+    .config {
+        width: 75%;
+        right: -75%;
+    }
+
+    .background-config {
+        width: 25%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 700px) {
@@ -316,7 +247,7 @@ input:checked + .slider:before {
 
     .side-menu:hover span {
         display: block;
-        animation: fadeIn 600ms;
+        animation: fadeIn 1500ms;
     }
 
     .nav-bar {
@@ -331,8 +262,27 @@ input:checked + .slider:before {
         display: none;
     }
 
+    .option a {
+        justify-content: space-around;
+
+    }
+
     .container {
         margin-left: 5rem;
+    }
+
+    .config {
+        width: 30%;
+        right: -30%;
+    }
+
+    .background-config {
+        width: 70%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: none;
     }
 
 }
