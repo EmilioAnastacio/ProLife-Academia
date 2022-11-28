@@ -46,9 +46,12 @@ function add_itens_tabela() {
   contador_personais ++;
   const tabela = document.getElementById("tabela-lista")
   const corpo_tabela = document.getElementById("body-table");
-  const blocos_conteudos = document.getElementById("blocos-conteudo");
+
+  const blocos_tudo = document.getElementById("tabela-blocos");
+  const blocos_conteudos = document.getElementById("blocos-conteudo");  
   const div_blocos = document.createElement("div");
   div_blocos.className = "bloco_1";
+
   const tr = document.createElement("tr");
   tr.id = `${contador_personais}`
 
@@ -58,6 +61,8 @@ function add_itens_tabela() {
       cargo: window.prompt("digite o cargo"),
       salario: window.prompt("digite o salario"),
       url_img: "../img/botao_editar.png",
+      url_img_blocos:"../img/icone.png",
+      url_img_editar_blocos:"../img/Group_18.png"
     }
   ]
 
@@ -71,15 +76,18 @@ function add_itens_tabela() {
   tabela.appendChild(corpo_tabela);
 
   let conteudo_blocos = `<div>
-            <p>Andre Gabriel Chang</p> 
-            <p>Personal</p>
+            <p>${campos[0].nome}</p> 
+            <p>${campos[0].cargo}</p>
           </div>
             <div class="imagem-icone-blocos">
-              <img src="../img/icone.png" alt="">
+              <img src="${campos[0].url_img_blocos}" alt="">
             </div>
-          <div class="imagem-editar-usuario"><img src="../img/Group 18.png" alt=""></div>`
+          <div class="imagem-editar-usuario"><img src="${campos[0].url_img_editar_blocos}" alt=""></div>`
 
-          
+  div_blocos.innerHTML = conteudo_blocos;
+  blocos_conteudos.appendChild(div_blocos);
+  blocos_tudo.appendChild(blocos_conteudos);
+
 
 
 
