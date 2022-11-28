@@ -56,43 +56,68 @@
         </ul>
     </nav>
 
+    <div class="conteudo-sino">
+        <img class ="sino" src="/img/Group 2.png" alt="sino">
+    </div>
+    
+
     <main class="Sreen-Exercicios">
         <div class="title">
             <h2>Exercicios</h2>
         </div>
 
-        <div class="card">
+        <div class="selector">
 
-            <div class="lineInput" id="linhaTipo">
-                <label>Exercicio</label>
-                <input type="text" id="exercicio" placeholder="nome do exercicio">
-            </div>
+            <button class="botao-exerc">Peito</button>
+            <button class="botao-exerc">Biceps</button>
+            <button class="botao-exerc">Costas</button>
+            <button class="botao-exerc">Triceps</button>
+            <button class="botao-exerc">Perna</button>
+            <button class="botao-exerc">Ombro</button>
 
-            <div class="lineInput" id="linhaTipo">
-                <label>Tipo</label>
-                <!-- <input type="text" id="tipo" placeholder="nome do tipo"> -->
-
-                <select name="estado.regiao" id="tipo" class="form-control" required="required"> 
-                    <option value="Peito">Peito</option>
-                    <option value="Biceps">Biceps</option>
-                    <option value="Costas">Costas</option>
-                    <option value="Triceps">Triceps</option>
-                    <option value="Perna">Perna</option>
-                    <option value="Ombro">Ombro</option>
-                </select>
-            </div>
-
-            <button onclick="exercicio.salvar()" id="saveEdit">Salvar</button>
-            <button onclick="exercicio.cancelar()">Cancelar</button>
+            <img id="add" src="/img/More.png" alt="">
         </div>
+
+        <!-- é a porra do meu card -->
+        <div class="arrumaCss" id="agrega"> 
+
+            <div class="card">
+                
+                <h1>Cadastrar um novo exercicio</h1>
+                <br>
+
+                <div class="lineInput" id="linhaTipo">
+                    <label>Exercicio</label>
+                    <input type="text" id="exercicio" placeholder="nome do exercicio">
+                </div>
+    
+                <div class="lineInput" id="linhaTipo">
+                    <label>Categoria</label>
+                    <!-- <input type="text" id="tipo" placeholder="nome do tipo"> -->
+    
+                    <select name="estado.regiao" id="tipo" class="form-control" required="required"> 
+                        <option value="Peito">Peito</option>
+                        <option value="Biceps">Biceps</option>
+                        <option value="Costas">Costas</option>
+                        <option value="Triceps">Triceps</option>
+                        <option value="Perna">Perna</option>
+                        <option value="Ombro">Ombro</option>
+                    </select>
+                </div>
+    
+                <button onclick="exercicio.salvar()" id="saveEdit" class="butSave">Salvar</button>
+                <button onclick="exercicio.cancelar()" class="cancelar">Cancelar</button>
+            </div>
+        </div>
+        
 
         <div class="content">
 
-            <table border="0">
+            <table border="0" id="tabela">
                 <thead>
                     <th class="center">ID</th>
                     <th>Exercicio</th>
-                    <th>Tipo</th>
+                    <th>Categoria</th>
                     <th class="center"> Ações</th>
                 </thead>
                 <tbody id="tbody">
@@ -108,12 +133,15 @@
                 </tbody>
 
             </table>
-
         </div>
+
+        <!-- <button class="adicionar"> <img src="/img/More.png" alt=""></button> -->
         
     </main>
 
-
+    
+    <!-- <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script> -->
     <script src="/js/treinos.js"></script>
 </body>
 </html>

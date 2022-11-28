@@ -84,7 +84,7 @@ class Exercicio{
 
         }
     }
-
+ 
     //FUNCAO QUE SERCE MERAMENTE PARA PREPARAR A ATT DE DADOS, mudar o nome do botao, e 
     // REESCREVER O CONTEUDO DO ID SELECIONADO
     preparaEdit(dados){
@@ -95,6 +95,24 @@ class Exercicio{
         document.getElementById('tipo').value = dados.tipoExercicio;
 
         document.getElementById('saveEdit').innerText ='Atualizar';
+
+
+        ////////////
+        ///////////
+
+        let addExer = document.getElementById('agrega');
+
+    if(addExer){
+        addExer.classList.add('mostrar');
+        addExer.addEventListener("click",(e)=>{
+
+            if(e.target.className == "cancelar" || e.target.className == "butSave"){
+
+                addExer.classList.remove('mostrar');
+            }
+
+        })
+    }
     }
 
     //FUNCAO PARA LER OS DADOS PELO ID DE CADA, exercicio & tipo
@@ -163,4 +181,32 @@ class Exercicio{
     }
 }
 
+
 var exercicio = new Exercicio();
+
+let addButton =document.getElementById('add');
+addButton.addEventListener("click", addExercicio);
+
+function addExercicio(){
+
+    let addExer = document.getElementById('agrega');
+
+    if(addExer){
+        addExer.classList.add('mostrar');
+        addExer.addEventListener("click",(e)=>{
+
+            if(e.target.className == "cancelar" || e.target.className == "butSave"){
+
+                addExer.classList.remove('mostrar');
+            }
+
+        })
+    }
+
+}
+
+// $('table#tabela').dataTable({
+//     "searching": true,
+//     "paging": true,
+//     "pageLength": 4,
+// });

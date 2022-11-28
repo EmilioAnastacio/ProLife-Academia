@@ -3,6 +3,22 @@
     margin: 0;
 }
 
+.conteudo-sino{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+.conteudo-sino .sino{
+    display: flex;
+    justify-content: end;
+    padding-top: 1%;
+    padding-right: 1%;
+    height: 100%;
+}
+
 .Sreen-Exercicios header{
     
     background-color: #fff;
@@ -12,9 +28,58 @@
 }
 
 .Sreen-Exercicios{
-    padding: 30px 50px;
+    padding: 20px 50px;
     width: 80%;
     margin-left: 5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Sreen-Exercicios .selector{
+
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+}
+
+
+.Sreen-Exercicios .selector button{
+
+    width: 12%;
+    font-size: 14px;
+}
+
+.Sreen-Exercicios .selector #add{
+
+    width: 4%;
+    margin-left: 21.2%;
+}
+
+.Sreen-Exercicios .arrumaCss{
+
+    display: none;
+
+    
+}
+
+.Sreen-Exercicios .arrumaCss.mostrar{
+
+
+    display: block;
+
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+    width: 90%;
+
+}
+
+.Sreen-Exercicios .arrumaCss h1{
+
+    text-align: center;
 }
 
 .Sreen-Exercicios .card{
@@ -23,6 +88,8 @@
     padding: 20px;
     margin-top: 15px;
     border-radius: 10px;
+
+    width: 30%;
 }
 
 .Sreen-Exercicios .lineInput{
@@ -48,6 +115,7 @@
     font-weight: bold;
 
     transition: all ease 0.3s;
+
 }
 
 .Sreen-Exercicios button:hover{
@@ -107,7 +175,18 @@
 
 .Sreen-Exercicios .card #linhaTipo{
 
-    width: 12%;
+    width: 40%;
+}
+
+.Sreen-Exercicios .card #saveEdit{
+
+    margin-left: 25%;
+}
+
+
+.Sreen-Exercicios .card .linhaExercicio{
+
+    width: 100%;
 }
 
 .Sreen-Exercicios .card label{
