@@ -31,9 +31,10 @@ function buttonConfig() {
 function abrir() {
     
     const notification = document.getElementById("notification");
-
+    console.log("123")
     if (notification.style.display == "none"){
         notification.style.display = 'block';
+        
     }else{
         notification.style.display = 'none';
 }
