@@ -10,6 +10,7 @@ function tabela_lista() {
   const tabela_blocos = document.getElementById("tabela-blocos");
   const tabela_lista = document.getElementById("tabela-lista");
   const tabela_img_more = document.getElementById("imagem-more-tabela");
+  const toda_tabela = document.getElementById("toda-tabela");
 
   tabela_img_blocos_altera.style.color = "black";
   tabela_img_lista_altera.style.color = "white";
@@ -18,12 +19,14 @@ function tabela_lista() {
   tabela_img_more.style.display = 'flex';
   tabela_lista.style.display = 'table';
   tabela_blocos.style.display = 'none';
+  toda_tabela.style.display = "flex"
 }
 
 function tabela_blocos() {
   const tabela_lista = document.getElementById('tabela-lista');
   const tabela_blocos = document.getElementById("tabela-blocos");
   const tabela_img_more = document.getElementById("imagem-more-tabela");
+  const toda_tabela = document.getElementById("toda-tabela");
 
 
   tabela_img_lista_altera.style.color = "black";
@@ -33,6 +36,7 @@ function tabela_blocos() {
   tabela_img_more.style.display = "none";
   tabela_lista.style.display = 'none';
   tabela_blocos.style.display = 'block';
+  toda_tabela.style.display = "none"
 }
 
 const botao_add = document.getElementById("imagem-more-tabela");
@@ -66,7 +70,8 @@ function add_itens_tabela() {
     }
   ]
 
-  let conteudo = `<td>${campos[0].nome}</td>
+  let conteudo = `<td>${contador_personais}</td>
+                  <td>${campos[0].nome}</td>
                   <td>${campos[0].cargo}</td>
                   <td>$${campos[0].salario}</td>
                   <td><img class="imagem-editar-abela" src="${campos[0].url_img}"alt=""></td>`
