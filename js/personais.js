@@ -74,7 +74,7 @@ function add_itens_tabela() {
                   <td>${campos[0].nome}</td>
                   <td>${campos[0].cargo}</td>
                   <td>$${campos[0].salario}</td>
-                  <td><img class="imagem-editar-abela" src="${campos[0].url_img}"alt=""></td>`
+                  <td><img class="imagem-editar-abela" id="" src="${campos[0].url_img}"alt=""></td>`
 
   tr.innerHTML = conteudo
   corpo_tabela.appendChild(tr);
