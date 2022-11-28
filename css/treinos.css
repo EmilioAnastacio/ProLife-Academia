@@ -1,0 +1,116 @@
+
+.Sreen-Exercicios *{
+    margin: 0;
+}
+
+.Sreen-Exercicios header{
+    
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.Sreen-Exercicios{
+    padding: 30px 50px;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.Sreen-Exercicios .card{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.Sreen-Exercicios .lineInput{
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.Sreen-Exercicios input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.Sreen-Exercicios button{
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+
+    background-color: rgb(30, 81, 221);
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+
+    transition: all ease 0.3s;
+}
+
+.Sreen-Exercicios button:hover{
+    background-color: rgb(10, 49, 121);
+}
+
+.Sreen-Exercicios .content{
+
+    margin-top: 15px;
+}
+
+.Sreen-Exercicios table{
+    border-collapse: collapse;
+    border: 1px solid none;
+    width: 100%;
+
+}
+
+.Sreen-Exercicios thead{
+
+    background-color: #004777;
+    height: 35px;
+    
+}
+
+.Sreen-Exercicios table th{
+    color: #fff;
+
+}
+
+.Sreen-Exercicios table th, td{
+
+    padding: 1px 5px;
+    text-align: left;
+}
+
+.Sreen-Exercicios table tbody tr:nth-child(even){
+
+    background-color: rgb(219, 219, 219);
+}
+
+.Sreen-Exercicios table td img{
+
+    width: 25px;
+    height: 25px;
+    margin-left: 27%;
+}
+
+.Sreen-Exercicios .center{
+    text-align: center;
+}
+
+.Sreen-Exercicios select{
+
+    padding-left: 5px;
+}
+
+.Sreen-Exercicios .card #linhaTipo{
+
+    width: 12%;
+}
+
+.Sreen-Exercicios .card label{
+
+    padding: 5px;
+}
