@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/cadastro-v2.css">
+    <script src="https://kit.fontawesome.com/9ede36cb5d.js" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
 <body>
     <section class="container">
         <article class="conteudo">
-
             <div class="logo">
                 <img src="../img/logo2.png" alt="">
                 <h1>PRO LIFE <br>ACADEMIA</h1>
             </div>
 
             <div class="sobre">
-            <h1 class="titulo">Melhore sua saúde aqui!</h1>
-            
-                <p>Inaugurada Janeiro de 2008 por @omar_gideone_pinheiro e @celiatargat
-                o Estúdio de Personal Pro Life Training trabalha com atendimento para pequenos grupos,
-                com prescrição individualizada e com horário marcado.
-                Com isso conseguimos trabalhar em cima do objetivo que você almeja.
-                O valor é mais acessível que personal trainer, mas o atendimento é muito parecido...
-                sempre com acompanhamento do profissional de EDUCAÇÃO FÍSICA e alongamento passivo no final da aula.
-                </p>
+                <h1 class="titulo">Melhore sua saúde aqui!</h1>
+                
+                    <p>Inaugurada Janeiro de 2008 por @omar_gideone_pinheiro e @celiatargat
+                    o Estúdio de Personal Pro Life Training trabalha com atendimento para pequenos grupos,
+                    com prescrição individualizada e com horário marcado.
+                    Com isso conseguimos trabalhar em cima do objetivo que você almeja.
+                    O valor é mais acessível que personal trainer, mas o atendimento é muito parecido...
+                    sempre com acompanhamento do profissional de EDUCAÇÃO FÍSICA e alongamento passivo no final da aula.
+                    </p>
             </div>
 
             <div class="local">
@@ -33,127 +33,131 @@
                 <p>Edifício Itaifa - Av. Iguaçu, 828 - Sala 1 e 2 - Vila Yolanda, Foz do Iguaçu - PR, 85853-500</p>
             </div>
 
+            <div class="redes-sociais">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
         </article>
-            <div class="cadastro">
-            
-                <legend class="cadastre-se">Cadastre-se para uma avaliação!</legend>
-                <br>
-                <div class="first">
-                    <div class="abas">
-                    <label class="label1">Dados Pessoais</label>
-                    <label>Endereço</label>
-                    <label>Contato</label>
-                    </div>
-                    <div class="inputs">
-                        <label for="nome" class="labelInput">Nome completo</label>
-                        <input type="text" name="nome" id="nome" class="inputUser" required>
-                        
-                    </div>
-                    <div class="inputs">
-                        <label for="rg" class="labelInput">RG</label>
-                        <input type="text" name="rg" id="rg" class="inputUser" required>
-                        
-                    </div>
-                    <div class="inputs">
-                        <label for="cpf" class="labelInput">CPF</label>
-                        <input type="text" name="cpf" id="cpf" class="inputUser" required>
-                        
-                    </div>
-                    <div class="inputs">
-                        <label for="email" class="labelInput">Email</label>
-                        <input type="text" name="email" id="email" class="inputUser" required>
-                        
-                    </div>
-                    <div class="inputs">
-                            <label for="data-nascimento"> <b>Data de nascimento</b></label><br>
-                            <input type="date" name="data-nascimento" id="data-nascimento" required>
-                            
+
+        <div class="cadastro">
+            <form>
+                <div class="container-cadastro">
+                    <div class="header">
+                        <h1 class="cadastre-se">Cadastre-se para uma avaliação!</h1>
+                        <div id="tab" class="abas">
+                            <div id="tab1" class="tabs">Dados Pessoais</div>
+                            <div id="tab2" class="tabs">Endereço</div>
+                            <div id="tab3" class="tabs">Contato</div>
+                        </div>
                     </div>
 
-                    <div class="direita-sexo">
+                    <div class="main">
+                        <div id="first" class="first part">
 
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                            <div class="inputs">
+                                <input type="text" name="nome" id="nome" class="inputUser" placeholder="Nome Completo" required>
+                                    
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="rg" id="rg" class="inputUser" placeholder="RG" required>
+                                
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="cpf" id="cpf" class="inputUser" placeholder="CPF" required>
+                                
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="email" id="email" class="inputUser" placeholder="Email" required>
+                                
+                            </div>
+                            <div class="inputs">
+                                    <label for="data-nascimento"> <b>Data de nascimento</b></label><br>
+                                    <input type="date" name="data-nascimento" id="data-nascimento" required>
+                                    
+                            </div>
+
+                            <div class="direita-sexo">
+
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                                
+                                <label for="feminino">Feminino</label>
+                                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                            </div>
+
+                            <div class="footer">
+                                <button class="next" onclick="openPart('second')" onlclick="changeColor()">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div id="second" class="second part">
+                            <div class="localizacao">
+                                <div class="inputs">
+                                    <input type="text" name="cidade" id="cidade" class="inputUser" placeholder="Cidade" required>
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="estado" id="estado" class="inputUser" placeholder="Estado" required>
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="endereço" id="endereço" class="inputUser" placeholder="Endereço" required>
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="CEP" id="CEP" class="inputUser" placeholder="CEP" required>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="footer">
+                                <button class="before" onclick="openPart('first')">Anterior</button>
+
+                                <button class="next" onclick="openPart('third')">Próximo</button>
+                            </div>
+                        </div>
+
+                        <div id="third" class="third part">
+                            <div class="contato">
+                                <div class="inputs">
+                                    <input type="text" name="celular" id="celular" class="inputUser" placeholder="Celular" required>
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="telefone-fixo" id="telefone-fixo" class="inputUser" placeholder="Telefone fixo">
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="telefone-trabalho" id="telefone-trabalho" class="inputUser" placeholder="Telefone do trabalho">
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="emergencia" id="emergencia" class="inputUser" placeholder="Telefone para emergencia / Nome" required>
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="pai" id="pai" class="inputUser" placeholder="Nome do pai">
+                                    
+                                </div>
+                                <div class="inputs">
+                                    <input type="text" name="mae" id="mae" class="inputUser" placeholder="Nome da mãe">
+                                    
+                                </div>
+                                
+                                <br>
+                            </div>
                         
-                        <label for="feminino">Feminino</label>
-                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                            <div class="footer">
+                                <button class="before" onclick="openPart('second')">Anterior</button>
+                                <button class="next" onclick="openPart('first')" >Salvar</button>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <br>
-                    <input type="submit" name="submit" id="next" value="Próximo">
                 </div>
-
-                <!-- <div class="second">
-                    <br>
-                    <br>
-                    <label class="abas">Endereço</label>
-                    <div class="localizacao">
-                        <div class="inputs">
-                            <label for="cidade" class="labelInput">Cidade</label>
-                            <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="estado" class="labelInput">Estado</label>
-                            <input type="text" name="estado" id="estado" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="endereço" class="labelInput">Endereço</label>
-                            <input type="text" name="endereço" id="endereço" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="CEP" class="labelInput">CEP</label>
-                            <input type="text" name="CEP" id="CEP" class="inputUser" required>
-                            
-                        </div>
-                    </div>
-                    <input type="submit" name="submit" value="Próximo">
-                </div>
-
-                <div class="third">
-                    <br>
-                    <br>
-                    <label class="abas">Contato</label>
-                    <div class="contato">
-                        <div class="inputs">
-                            <label for="celular" class="labelInput">Celular</label>
-                            <input type="text" name="celular" id="celular" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="telefone-fixo" class="labelInput">Telefone fixo</label>
-                            <input type="text" name="telefone-fixo" id="telefone-fixo" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="telefone-trabalho" class="labelInput">Telefone do trabalho</label>
-                            <input type="text" name="telefone-trabalho" id="telefone-trabalho" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="emergencia" class="labelInput">Telefone para emergencia / Nome</label>
-                            <input type="text" name="emergencia" id="emergencia" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="pai" class="labelInput">Nome do pai</label>
-                            <input type="text" name="pai" id="pai" class="inputUser" required>
-                            
-                        </div>
-                        <div class="inputs">
-                            <label for="mae" class="labelInput">Nome da mãe</label>
-                            <input type="text" name="mae" id="mae" class="inputUser" required>
-                            
-                        </div>
-                        
-                        <br>
-                        <input type="submit" name="submit">
-                    </div>
-                </div> -->
-
+            </form>
         </div>
     </section>
+<script src="/js/cadastro.js"></script>
 </body>
 </html>
