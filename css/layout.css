@@ -312,3 +312,81 @@ main.container {
         opacity: 1;
     }
 }
+/*CSS NOTIFICATION*/
+/*notificação*/
+.notification{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 15px;
+    top: 60px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    display: none;
+    overflow-y: scroll;
+    box-shadow: 4px 4px 4px 4px rgba(211, 211, 211, 0.337);
+    z-index: 1;
+}
+
+.conteudo{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    border-bottom: 1px solid #eaeaea;
+    
+}
+
+.conteudo:last-child {
+    border: none;
+}
+.div_icon{
+    height: 60px;
+    width: 60px;
+    background-color: #00629A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.div_message{
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #004777;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+   
+
+}
+.frase{
+    font-size: 20px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.horario{
+    font-size: 10px;
+    align-self: flex-end;
+    padding: 6px;
+    position: relative
+}
+.div_icon i {
+    color: #eaeaea;
+}
+.yellow {
+    background-color: rgba(255, 255, 24, 0.963);
+}
+.yellow i{
+    color: white;
+}

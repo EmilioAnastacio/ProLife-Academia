@@ -26,3 +26,15 @@ function buttonConfig() {
 
   contador++;
 }
+
+ 
+function abrir() {
+    
+    const notification = document.getElementById("notification");
+
+    if (notification.style.display == "none"){
+        notification.style.display = 'block';
+    }else{
+        notification.style.display = 'none';
+}
+    }
