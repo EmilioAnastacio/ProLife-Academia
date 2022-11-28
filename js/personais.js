@@ -16,6 +16,7 @@ function tabela_lista() {
   botao_tabela.classList.add("active");
   tabela_lista.style.display = 'table';
   tabela_blocos.style.display = 'none';
+  toda_tabela.style.display = "flex"
 }
 
 function tabela_blocos() {
@@ -28,6 +29,7 @@ function tabela_blocos() {
   botao_tabela.classList.remove("active");
   tabela_lista.style.display = 'none';
   tabela_blocos.style.display = 'block';
+  toda_tabela.style.display = "none"
 }
 
 const botao_add = document.getElementById("imagem-more-tabela");

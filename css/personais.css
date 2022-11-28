@@ -202,7 +202,7 @@ tbody td i {
 .blocos-conteudo {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  justify-content:stretch;
+  justify-content: stretch;
   gap: 5%;
 }
 
@@ -237,6 +237,167 @@ tbody td i {
   color: #004777;
   margin-left: auto;
   align-self: end;
+}
+
+
+.img-more-blocos div:hover {
+  animation: 1s;
+  background-color: #2a73af;
+}
+
+.img-more-blocos img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.imagem-editar-usuario img:hover {
+  scale: 1.1;
+  animation: 1s;
+}
+
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+  .botoes-altera-tabela {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 81vw;
+  }
+
+  .div-barra-de-busca input {
+    width: 70%;
+    height: 60%;
+    border: 1.5px solid black;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .div-barra-de-busca {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+  .botoes-altera-tabela {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 79vw;
+  }
+
+  .div-barra-de-busca input {
+    width: 80%;
+    height: 60%;
+    border: 1.5px solid black;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .div-barra-de-busca {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width:768px) {
+  .botoes-altera-tabela>button {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .div-barra-de-busca button {
+    width: 40px;
+    height: 38px;
+    background-color: #2a73af;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+  }
+
+  .div-barra-de-busca input {
+    width: 80%;
+    height: 70%;
+    border: 1.5px solid black;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .botoes-altera-tabela {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 76vw;
+  }
+
+  .div-barra-de-busca {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .tabela-lista {
+    width: 100%;
+    overflow: auto;
+    border-spacing: 0px;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  .botoes-altera-tabela>button {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .img-more-tabela {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .div-barra-de-busca button {
+    width: 45px;
+    height: 40px;
+    background-color: #2a73af;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+  }
+
+  .div-barra-de-busca input {
+    width: 80%;
+    height: 85%;
+    border: 1.5px solid black;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  .botoes-altera-tabela {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100vw;
+  }
+
+  .div-barra-de-busca {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 @keyframes fade {
