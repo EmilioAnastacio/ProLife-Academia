@@ -13,7 +13,7 @@
 
 body {
     color: black;
-    background-color: white;
+    background-color: #fafafa;
     margin: 0;
     padding: 0;
 }
@@ -104,20 +104,92 @@ body {
 
 .nav-bar .option a {
     display: flex;
-    justify-content: space-around;
     color: var(--title-color);
     text-decoration: none;
     font-weight: 500;
     width: 5rem;
+    cursor: default
 }
+
 .nav-bar .option i {
     font-size: 1.8rem;
+}
+
+.option i {
+    cursor: pointer;
 }
 
 main.container {
     padding: 0 10px 0;
 }
 
+/* CONFIGURACOES*/
+
+.config {
+    color: #fafafa;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    background-color: #004777;
+    transition: right 600ms ease;
+}
+
+.active-config {
+    right: 0 !important;
+}
+
+.config .contain {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.config-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.config-options .title {
+    font-size: 1.2rem;
+    padding: 10%;
+}
+
+.config-options button {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #004777;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.config-footer {
+    padding: 10px;
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.config-footer button {
+    border: none;
+    width: 4vw;
+    background-color: transparent;
+}
+
+.config-footer>div>i {
+    color: #fafafa;
+}
+
+.exit button i {
+    color: #fafafa;
+    ;
+    font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 700px) {
     .side-menu {
@@ -142,7 +214,25 @@ main.container {
     .menu-opc:last-child {
         display: none;
     }
-    
+
+    .option a {
+        justify-content: flex-end;
+    }
+
+    .config {
+        width: 75%;
+        right: -75%;
+    }
+
+    .background-config {
+        width: 25%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 700px) {
@@ -158,7 +248,7 @@ main.container {
 
     .side-menu:hover span {
         display: block;
-        animation: fadeIn 600ms;
+        animation: fadeIn 1500ms;
     }
 
     .nav-bar {
@@ -173,8 +263,27 @@ main.container {
         display: none;
     }
 
+    .option a {
+        justify-content: space-around;
+
+    }
+
     .container {
         margin-left: 5rem;
+    }
+
+    .config {
+        width: 30%;
+        right: -30%;
+    }
+
+    .background-config {
+        width: 70%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: none;
     }
 
 }
