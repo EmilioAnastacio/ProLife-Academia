@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
     --title-color: #00629A;
@@ -13,14 +13,28 @@
 
 body {
     color: black;
-    background-color: white;
+    background-color: #fafafa;
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #004777;
+    border: 1px solid #004777;
+    border-radius: 10px;
 }
 
 /* MENU */
 
 .side-menu {
+    z-index: 1;
     position: fixed;
     background-color: #004777;
     transition: width 600ms ease;
@@ -72,6 +86,8 @@ body {
     margin: 0 1.5rem;
 }
 
+/* NAV BAR */
+
 .nav-bar {
     list-style: none;
     padding: 0 10px 0;
@@ -97,25 +113,98 @@ body {
 
 .nav-bar .option:first-child a {
     justify-content: flex-start;
+    width: 100%;
 }
 
 .nav-bar .option a {
     display: flex;
-    justify-content: space-around;
     color: var(--title-color);
     text-decoration: none;
     font-weight: 500;
     width: 5rem;
+    cursor: default
 }
+
 .nav-bar .option i {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
-/* .nav-bar .option .profile-img {
-    width: 2rem;
-} */
 
+.option i {
+    cursor: pointer;
+}
 
+main.container {
+    z-index: 0;
+    padding: 0 10px 0;
+}
 
+/* CONFIGURACOES*/
+
+.config {
+    color: #fafafa;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    background-color: #004777;
+    transition: right 600ms ease;
+}
+
+.active-config {
+    right: 0 !important;
+}
+
+.config .contain {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.config-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.config-options .title {
+    font-size: 1.2rem;
+    padding: 10%;
+}
+
+.config-options button {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #004777;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.config-footer {
+    padding: 10px;
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.config-footer button {
+    border: none;
+    width: 4vw;
+    background-color: transparent;
+}
+
+.config-footer>div>i {
+    color: #fafafa;
+}
+
+.exit button i {
+    color: #fafafa;
+    ;
+    font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 700px) {
     .side-menu {
@@ -140,7 +229,25 @@ body {
     .menu-opc:last-child {
         display: none;
     }
-    
+
+    .option a {
+        justify-content: flex-end;
+    }
+
+    .config {
+        width: 75%;
+        right: -75%;
+    }
+
+    .background-config {
+        width: 25%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 700px) {
@@ -156,14 +263,41 @@ body {
 
     .side-menu:hover span {
         display: block;
-        animation: fadeIn 600ms;
+        animation: fadeIn 1500ms;
     }
 
     .nav-bar {
         margin-left: 5rem;
     }
 
+    .nav-bar .option:nth-of-type(2) a {
+        justify-content: center;
+    }
+
     .nav-bar .option:last-child {
+        display: none;
+    }
+
+    .option a {
+        justify-content: space-around;
+
+    }
+
+    .container {
+        margin-left: 5rem;
+    }
+
+    .config {
+        width: 30%;
+        right: -30%;
+    }
+
+    .background-config {
+        width: 70%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
         display: none;
     }
 

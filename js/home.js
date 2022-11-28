@@ -1,58 +1,106 @@
-var scrollAnterior = window.pageYOffset;
-
-window.onscroll = function () {
-
-    var scrollAtual = window.pageYOffset;
-
-    if (scrollAnterior > scrollAtual) {
-        document.getElementsByClassName("nav-principal")[0].style.top = '0px';
-    } else {
-        document.getElementsByClassName("nav-principal")[0].style.top = '-55px';
-    }
-
-    scrollAnterior = scrollAtual;
-}
-
 const diasemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
 const d = new Date();
 
-var element = document.getElementById('dia');
-element.innerHTML = diasemana[d.getDay()] + ', ' + d.getDate() + ' de ' + meses[d.getMonth()];
-
- var temporizador = d.getHours();
-var hora = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-// console.log(hora);
-
- var cor_lua = window.document.querySelector(".lua");
- var cor_boxclima = window.document.querySelector(".box-clima");
- var bem_vindo = window.document.querySelector(".welcome")
- var dia = window.document.querySelector("#dia")
+var element = document.getElementById('welcome');
+var dia = diasemana[d.getDay()] + ', ' + d.getDate() + ' de ' + meses[d.getMonth()];
+element.style.display = 'block';
+element.innerHTML += `<br>  <span class='dia'> ${dia} </span>`;
 
 
-if(temporizador >= 0 && temporizador <= 12){
-    dia.style.color = "black"
-    bem_vindo.style.color = "black"
-    cor_lua.style.background =  "linear-gradient(180deg, #ffeb00 -10.71%, rgb(255 240 0 / 49%) 100%)"
-    cor_boxclima.style.background = "linear-gradient(180deg, #ABFAFF 0%, #D5FFAB 100%)"
-}else if(temporizador >= 12 && temporizador <=18){
-    dia.style.color = "black"
-    bem_vindo.style.color = "black"
-    cor_lua.style.background =  "linear-gradient(rgb(255, 235, 0) -10.71%, rgb(255 240 0 / 19%) 100%)"
-    cor_boxclima.style.background = "linear-gradient(rgb(200 217 33) 0%, rgb(229 244 1 / 36%) 100%)"
-}else{
-    dia.style.color = "white"
-    bem_vindo.style.color = "white"
-    cor_lua.style.background = "linear-gradient(180deg, #A5C4EB -10.71%, rgba(81, 234, 255, 0) 100%)"
-    cor_boxclima.style.background = "linear-gradient(180deg, #0e81d2 0%, #00000075 100%)"
-}
+let progressBar = document.querySelector(".circular-progress");
+let valueContainer = document.querySelector(".value-container");
+
+let progressValue = 0;
+let progressEndValue = 66;
+let speed = 15;
+
+let progress = setInterval(() => {
+    progressValue++;
+    valueContainer.textContent = `${progressValue}%`;
+    progressBar.style.background = `conic-gradient(
+      #00AFB5 ${progressValue * 3.6}deg,
+      #cadcff ${progressValue * 3.6}deg
+  )`;
+    if (progressValue == progressEndValue) {
+        clearInterval(progress);
+    }
+}, speed);
 
 
+let progressBar_mini1 = document.querySelector("#b-mini1");
+let valueContainer_mini1 = document.querySelector("#s-mini1");
+
+let progressValue_mini1 = 0;
+let progressEndValue_mini1 = 85;
+
+let progress_mini1 = setInterval(() => {
+    progressValue_mini1++;
+    valueContainer_mini1.textContent = `${progressValue_mini1}%`;
+    progressBar_mini1.style.background = `conic-gradient(
+      #00AFB5 ${progressValue_mini1 * 3.6}deg,
+      #cadcff ${progressValue_mini1 * 3.6}deg
+  )`;
+    if (progressValue_mini1 == progressEndValue_mini1) {
+        clearInterval(progress_mini1);
+    }
+}, speed);
+
+let progressBar_mini2 = document.querySelector("#b-mini2");
+let valueContainer_mini2 = document.querySelector("#s-mini2");
+
+let progressValue_mini2 = 0;
+let progressEndValue_mini2 = 95;
+
+let progress_mini2 = setInterval(() => {
+    progressValue_mini2++;
+    valueContainer_mini2.textContent = `${progressValue_mini2}%`;
+    progressBar_mini2.style.background = `conic-gradient(
+      #00AFB5 ${progressValue_mini2 * 3.6}deg,
+      #cadcff ${progressValue_mini2 * 3.6}deg
+  )`;
+    if (progressValue_mini2 == progressEndValue_mini2) {
+        clearInterval(progress_mini2);
+    }
+}, speed);
 
 
+let progressBar_mini4 = document.querySelector("#b-mini4");
+let valueContainer_mini4 = document.querySelector("#s-mini4");
 
+let progressValue_mini4 = 0;
+let progressEndValue_mini4 = 100;
 
+let progress_mini4 = setInterval(() => {
+    progressValue_mini4++;
+    valueContainer_mini4.textContent = `${progressValue_mini4}%`;
+    progressBar_mini4.style.background = `conic-gradient(
+      #00AFB5 ${progressValue_mini4 * 3.6}deg,
+      #cadcff ${progressValue_mini4 * 3.6}deg
+  )`;
+    if (progressValue_mini4 == progressEndValue_mini4) {
+        clearInterval(progress_mini4);
+    }
+}, speed);
+
+let progressBar_mini5 = document.querySelector("#b-mini5");
+let valueContainer_mini5 = document.querySelector("#s-mini5");
+
+let progressValue_mini5 = 0;
+let progressEndValue_mini5 = 87;
+
+let progress_mini5 = setInterval(() => {
+    progressValue_mini5++;
+    valueContainer_mini5.textContent = `${progressValue_mini5}%`;
+    progressBar_mini5.style.background = `conic-gradient(
+      #00AFB5 ${progressValue_mini5 * 3.6}deg,
+      #cadcff ${progressValue_mini5 * 3.6}deg
+  )`;
+    if (progressValue_mini5 == progressEndValue_mini5) {
+        clearInterval(progress_mini5);
+    }
+}, speed);
 
 
 

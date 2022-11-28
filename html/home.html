@@ -2,21 +2,18 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico">
 
     <title>Pro life Academia</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/layout.css">
-    <!-- <link rel="stylesheet" href="/css/home.css"> -->
+    <link rel="stylesheet" href="/css/layout.css" />
 
-    <!-- JS -->
-    <!-- <script src="/js/graficos.js"></script> -->
-
-    <!-- GRAFICOS -->
-    
+    <link rel="stylesheet" href="/css/home.css">
 
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/9ede36cb5d.js" crossorigin="anonymous"></script>
@@ -24,73 +21,172 @@
 
 <body>
 
-    <!-- SIDE MENU -->
-    <nav class="side-menu">
-        <ul class="menu-contain">
-            <li class="menu-opc">
-                <a class="menu-button" href="#user">
-                    <i class="fa-solid fa-house"></i>
-                    <span>HOME</span>
-                </a>
-            </li>
-            <li class="menu-opc">
-                <a class="menu-button" href="#user">
-                    <i class="fa-solid fa-user"></i>
-                    <span>ALUNOS</span>
-                </a>
-            </li>
-            <li class="menu-opc">
-                <a class="menu-button" href="#user">
-                    <i class="fa-solid fa-dumbbell"></i>
-                    <span>EXERCICIOS</span>
-                </a>
-            </li>
-            <li class="menu-opc">
-                <a class="menu-button" href="#user">
-                    <i class="fa-solid fa-users"></i>
-                    <span>PERSONAIS</span>
-                </a>
-            </li>
-            <li class="menu-opc">
-                <a class="menu-button" href="#user">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <span>FINANCEIRO</span>
-                </a>
-            </li>
-            <li class="menu-opc">
-                <a class="menu-button" href="#user">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>CONFIGURAÇÕES</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <body>
+        <!-- SIDE MENU -->
+        <nav class="side-menu">
+            <ul class="menu-contain">
+                <li class="menu-opc">
+                    <a class="menu-button" href="home.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li class="menu-opc">
+                    <a class="menu-button" href="alunos.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>ALUNOS</span>
+                    </a>
+                </li>
+                <li class="menu-opc">
+                    <a class="menu-button" href="#user">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>EXERCICIOS</span>
+                    </a>
+                </li>
+                <li class="menu-opc">
+                    <a class="menu-button" href="personais.html">
+                        <i class="fa-solid fa-users"></i>
+                        <span>PERSONAIS</span>
+                    </a>
+                </li>
+                <li class="menu-opc">
+                    <a class="menu-button" href="financeiro.html">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span>FINANCEIRO</span>
+                    </a>
+                </li>
+                <li class="menu-opc">
+                    <a class="menu-button" id="config-button-desk" href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>CONFIGURAÇÕES</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- NAV/HEADER -->
-    <header>
-        <ul class="nav-bar">
-            <li class="option">
-                <a href="home">HOME</a>
-            </li>
-            <li class="option">
-                <a href="@"><i class="fa-regular fa-copy"></i></i></a>
-            </li>
-            <li class="option">
-                <a href="#123"><i class="fa-solid fa-bell"></i></a>
-            </li>
-            <li class="option">
-                <a href="#123"><i class="fa-solid fa-bell"></i></a>
-            </li>
-        </ul>
-    </header>
-    
-    <main>
-        <div class="welcome">
-            <h1>Bem-Vindos</h1>
-            <h3 class="diaatual"></h3>
+        <!-- NAV/HEADER -->
+        <header>
+            <ul class="nav-bar">
+                <li class="option">
+                    <a href="Home" id="welcome">BEM-VINDO</a>
+                </li>
+                <li class="option">
+                    <a href="#123"><i class="fa-solid fa-bell"></i></a>
+                </li>
+                <li class="option">
+                    <a href="#" id="config-button-mob"><i class="fa-solid fa-gear"></i></a>
+                </li>
+            </ul>
+        </header>
+
+        <!-- CONFIGURAÇÕES -->
+        <div class="config" id="config">
+            <div class="background-config"></div>
+
+            <div class="contain">
+
+                <div class="config-options">
+
+                    <div class="title">CONFIGURAÇÕES</div>
+                    <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
+
+                </div>
+
+                <div class="config-footer">
+
+                    <span class="exit">
+                        <button> <i class="fa-solid fa-power-off"></i> </button>
+                    </span>
+
+                </div>
+            </div>
         </div>
-    </main>
 
-</body>
+        <main class="container">
+            <div class="first">
+
+                <div class="avaliacoes">
+
+
+
+                </div>
+
+                <div class="progress">
+
+                    <div class="title-home">OCUPAÇÃO ATUAL</div>
+
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="week">
+                <div class="title-home">Ocupação prevista nos próximos dias</div>
+
+                <div class="ocupacao-semanal">
+
+                    <div class="ocupacao-dia">
+                        <div class="dia-title">SEX 21</div>
+
+
+                        <div class="circular-progress-mini" id="b-mini1">
+                            <div class="value-container-mini" id="s-mini1">0%</div>
+                        </div>
+
+                    </div>
+
+                    <div class="ocupacao-dia">
+                        <div class="dia-title">SAB 22</div>
+
+
+                        <div class="circular-progress-mini" id="b-mini2">
+                            <div class="value-container-mini" id="s-mini2">0%</div>
+                        </div>
+
+                    </div>
+
+                    <div class="ocupacao-dia">
+                        <div class="dia-title">DOM 23</div>
+
+
+                        <div class="circular-progress-mini" id="b-mini3">
+                            <div class="value-container-mini" id="s-mini3">0%</div>
+                        </div>
+
+                    </div>
+
+                    <div class="ocupacao-dia">
+                        <div class="dia-title">SEG 24</div>
+
+
+                        <div class="circular-progress-mini" id="b-mini4">
+                            <div class="value-container-mini" id="s-mini4">0%</div>
+                        </div>
+
+                    </div>
+
+                    <div class="ocupacao-dia">
+                        <div class="dia-title">TER 25</div>
+
+
+                        <div class="circular-progress-mini" id="b-mini5">
+                            <div class="value-container-mini" id="s-mini5">0%</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+             
+
+
+            </div>
+        </main>
+
+        <script src="/js/home.js"></script>
+        <script src="/js/layout.js"></script>
+    </body>
 
 </html>

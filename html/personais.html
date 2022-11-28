@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout.css">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="/img/logo.ico">
 
     <title>Pro life Academia</title>
 
     <!-- CSS -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/alunos.css">
+    <link rel="stylesheet" href="/css/layout.css" />
+
+    <link rel="stylesheet" href="../css/personais.css">
 
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/9ede36cb5d.js" crossorigin="anonymous"></script>
@@ -21,8 +26,8 @@
 
 <body>
 
-     <!-- SIDE MENU -->
-     <nav class="side-menu">
+    <!-- SIDE MENU -->
+    <nav class="side-menu">
         <ul class="menu-contain">
             <li class="menu-opc">
                 <a class="menu-button" href="home.html">
@@ -67,7 +72,7 @@
     <header>
         <ul class="nav-bar">
             <li class="option">
-                <a href="Home">PRO LIFE ACADEMIA</a>
+                <a href="Home">PERSONAIS</a>
             </li>
             <li class="option">
                 <a href="#123"><i class="fa-solid fa-bell"></i></a>
@@ -83,13 +88,13 @@
         <div class="background-config"></div>
 
         <div class="contain">
-        
+
             <div class="config-options">
 
                 <div class="title">CONFIGURAÇÕES</div>
-                    <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
-                    <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
-                
+                <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
+
             </div>
 
             <div class="config-footer">
@@ -102,30 +107,54 @@
         </div>
     </div>
 
+
     <main class="container">
+        <header class="header-blocos">
+            <div class="botoes-altera-tabela">
+                <div class="div-barra-de-busca">
+                    <input type="text" name="pesquisa" placeholder="Pesquisar...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ALUNO</th>
-                    <th>CONTATO</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ERICK OJEDA</td>
-                    <td>45 9 99149461</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+                <button class="button-tipo" id="botao-blocos"><i class="fa-solid fa-table-cells"></i></button>
+                <button class="button-tipo active" id="botao-tabela"><i class="fa-solid fa-table-list"></i></button>
 
+            </div>
+        </header>
+
+        <div class="container-personais-conteudo-tabela" id="toda-tabela">
+            <table class="tabela-lista" id="tabela-lista">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                        <th>Salário</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="body-table">
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="container-personais-conteudo-blocos hide" id="tabela-blocos">
+            <div class="blocos-conteudo " id="blocos-conteudo">
+
+                
+            </div>
+        </div>
+       
+        <div class="img-more-tabela" id="imagem-more-tabela">
+            <div>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
     </main>
 
-
+    <script src="../js/personais.js"></script>
     <script src="../js/layout.js"></script>
 </body>
 
