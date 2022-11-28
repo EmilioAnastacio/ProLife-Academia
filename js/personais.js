@@ -2,6 +2,7 @@ const botao_blocos = document.getElementById('botao-blocos');
 const botao_tabela = document.getElementById('botao-tabela');
 const tabela_img_lista_altera = document.querySelector(".fa-table-list");
 const tabela_img_blocos_altera = document.querySelector(".fa-table-cells");
+const toda_tabela = document.getElementById("tabela-toda");
 
 botao_blocos.addEventListener('click', tabela_blocos);
 botao_tabela.addEventListener('click', tabela_lista);
@@ -9,6 +10,7 @@ botao_tabela.addEventListener('click', tabela_lista);
 function tabela_lista() {
   const tabela_blocos = document.getElementById("tabela-blocos");
   const tabela_lista = document.getElementById("tabela-lista");
+  
 
   tabela_img_blocos_altera.style.color = "black";
   tabela_img_lista_altera.style.color = "white";
@@ -60,10 +62,10 @@ function add_itens_tabela() {
   }
 
   let conteudo = `<td>${contador_personais}</td>
-                  <td>${campos[0].nome}</td>
-                  <td>${campos[0].cargo}</td>
-                  <td>$${campos[0].salario}</td>
-                  <td><img class="imagem-editar-abela" id="" src="${campos[0].url_img}"alt=""></td>`
+                  <td>${campos.nome}</td>
+                  <td>${campos.cargo}</td>
+                  <td>$${campos.salario}</td>
+                  <td><img class="imagem-editar-abela" id="" src="${campos.url_img}"alt=""></td>`
 
   tr.innerHTML = conteudo
   corpo_tabela.appendChild(tr);

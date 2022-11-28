@@ -261,15 +261,15 @@ tbody td i {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    width: 81vw;
+    width: 100vw;
   }
 
-  .div-barra-de-busca input {
+.div-barra-de-busca input {
     width: 70%;
     height: 60%;
-    border: 1.5px solid black;
-    border-radius: 10px 0px 0px 10px;
-  }
+    border: 1.5px solid #eaeaea;
+    border-radius: 5px 0px 0px 5px;
+}
 
   .div-barra-de-busca {
     width: 100%;
@@ -278,6 +278,15 @@ tbody td i {
     justify-content: flex-start;
   }
 
+  .div-barra-de-busca button {
+    width: 5%;
+    height: 66%;
+    color: #EAEAEA;
+    border: none;
+    background-color: #2a73af;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
 
 }
 
@@ -286,14 +295,28 @@ tbody td i {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    width: 79vw;
+    width: 100vw;
   }
 
-  .div-barra-de-busca input {
-    width: 80%;
-    height: 60%;
-    border: 1.5px solid black;
-    border-radius: 10px 0px 0px 10px;
+  .bloco {
+    background-color: #F3F3F3;
+    padding: 15px;
+    width: 33vw;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 5%;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+
+  .blocos-conteudo {
+    gap: 6%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .div-barra-de-busca {
@@ -302,6 +325,23 @@ tbody td i {
     align-items: center;
     justify-content: flex-start;
   }
+  
+  .div-barra-de-busca input {
+    width: 80%;
+    height: 60%;
+    border: 1.5px solid #eaeaea;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .div-barra-de-busca button {
+    width: 8%;
+    height: 64%;
+    color: #EAEAEA;
+    border: none;
+    background-color: #2a73af;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
 
 }
 
@@ -312,6 +352,20 @@ tbody td i {
     border-radius: 10px;
     cursor: pointer;
     border: none;
+  }
+
+  .bloco {
+    background-color: #F3F3F3;
+    padding: 15px;
+    width: 39vw;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 5%;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   }
 
   .div-barra-de-busca button {
@@ -325,7 +379,7 @@ tbody td i {
   .div-barra-de-busca input {
     width: 80%;
     height: 70%;
-    border: 1.5px solid black;
+    border: 1.5px solid #eaeaea;
     border-radius: 10px 0px 0px 10px;
   }
 
@@ -333,7 +387,7 @@ tbody td i {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    width: 76vw;
+    width: 100vw;
   }
 
   .div-barra-de-busca {
@@ -354,6 +408,29 @@ tbody td i {
     animation-duration: 1s;
   }
 
+  .bloco {
+    background-color: #F3F3F3;
+    padding: 15px;
+    width: 85vw;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 5%;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%); 
+  }
+
+  .img-more-tabela {
+    right: 5%;
+    bottom: 10%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .botoes-altera-tabela>button {
     width: 60px;
     height: 40px;
@@ -372,18 +449,18 @@ tbody td i {
 
   .div-barra-de-busca button {
     width: 45px;
-    height: 40px;
+    height: 38px;
     background-color: #2a73af;
     border-radius: 0px 5px 5px 0px;
     cursor: pointer;
-  }
+}
 
   .div-barra-de-busca input {
     width: 80%;
-    height: 85%;
-    border: 1.5px solid black;
+    height: 70%;
+    border: 1.5px solid #eaeaea;
     border-radius: 5px 0px 0px 5px;
-  }
+}
 
   .botoes-altera-tabela {
     display: flex;
