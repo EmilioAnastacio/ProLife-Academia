@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
     --title-color: #00629A;
@@ -18,9 +18,23 @@ body {
     padding: 0;
 }
 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #004777;
+    border: 1px solid #004777;
+    border-radius: 10px;
+}
+
 /* MENU */
 
 .side-menu {
+    z-index: 1;
     position: fixed;
     background-color: #004777;
     transition: width 600ms ease;
@@ -120,6 +134,7 @@ body {
 }
 
 main.container {
+    z-index: 0;
     padding: 0 10px 0;
 }
 
