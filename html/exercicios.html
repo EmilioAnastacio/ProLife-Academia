@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+
+    <link rel="stylesheet" href="/css/exercicios.css">
+    <link rel="stylesheet" href="/css/layout.css">
+
+    <script src="https://kit.fontawesome.com/9ede36cb5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--------------------------NAV BAR---------------------------------------->
+
+    <nav class="side-menu">
+        <ul class="menu-contain">
+            <li class="menu-opc">
+                <a class="menu-button" href="home.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="menu-opc">
+                <a class="menu-button" href="alunos.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>ALUNOS</span>
+                </a>
+            </li>
+            <li class="menu-opc">
+                <a class="menu-button" href="exercicios.html">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>EXERCICIOS</span>
+                </a>
+            </li>
+            <li class="menu-opc">
+                <a class="menu-button" href="personais.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span>PERSONAIS</span>
+                </a>
+            </li>
+            <li class="menu-opc">
+                <a class="menu-button" href="financeiro.html">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>FINANCEIRO</span>
+                </a>
+            </li>
+            <li class="menu-opc">
+                <a class="menu-button" id="config-button-desk" href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>CONFIGURAÇÕES</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- NAV/HEADER -->
+    <header>
+        <ul class="nav-bar">
+            <li class="option">
+                <a href="Home">PRO LIFE ACADEMIA</a>
+            </li>
+            <li class="option">
+                <a href="#123"><i class="fa-solid fa-bell" onclick="abrir()" ></i></a>
+            </li>
+            <li class="option">
+                <a href="#" id="config-button-mob"><i class="fa-solid fa-gear"></i></a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- CONFIGURAÇÕES -->
+    <div class="config" id="config">
+        <div class="background-config"></div>
+
+        <div class="contain">
+        
+            <div class="config-options">
+
+                <div class="title">CONFIGURAÇÕES</div>
+                    <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
+                
+            </div>
+
+            <div class="config-footer">
+
+                <span class="exit">
+                    <button> <i class="fa-solid fa-power-off"></i> </button>
+                </span>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////// -->
+    <div class="notification" id="notification">
+
+        <div class="conteudo">
+            <div class="div_icon">
+                <i class="fa-solid fa-user fa-2x" ></i>
+            </div>
+            <div class="div_message">
+                <p class="frase">Essa é uma notificação de alerta de cadastro</p>
+                <p class="horario">24:69</p>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="div_icon yellow">
+                <i class="fa-solid fa-clock fa-2x" ></i>
+            </div>
+            <div class="div_message">
+                <p class="frase">Essa é uma notificação de alerta de cadastro</p>
+                <p class="horario">24:69</p>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="div_icon">
+                <i class="fa-solid fa-user fa-2x" ></i>
+            </div>
+            <div class="div_message">
+                <p class="frase">Essa é uma notificação de alerta de cadastro</p>
+                <p class="horario">24:69</p>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="div_icon">
+                <i class="fa-solid fa-user fa-2x" ></i>
+            </div>
+            <div class="div_message">
+                <p class="frase">Essa é uma notificação de alerta de cadastro</p>
+                <p class="horario">24:69</p>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="div_icon">
+                <i class="fa-solid fa-user fa-2x"></i>
+            </div>
+            <div class="div_message">
+                <p class="frase">Essa é uma notificação de alerta de cadastro</p>
+                <p class="horario">24:69</p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <div class="conteudo-sino">
+        <img class ="sino" src="/img/Group 2.png" alt="sino">
+    </div> -->
+    
+
+    <main class="Sreen-Exercicios">
+        <div class="title">
+            <h2>Exercicios</h2>
+        </div>
+
+        <div class="selector">
+
+            <button class="botao-exerc">Peito</button>
+            <button class="botao-exerc">Biceps</button>
+            <button class="botao-exerc">Costas</button>
+            <button class="botao-exerc">Triceps</button>
+            <button class="botao-exerc">Perna</button>
+            <button class="botao-exerc">Ombro</button>
+
+            <img id="add" src="/img/More.png" alt="">
+        </div>
+
+        <!-- é a porra do meu card -->
+        <div class="arrumaCss" id="agrega"> 
+
+            <div class="card">
+                
+                <h1>Cadastrar um novo exercicio</h1>
+                <br>
+
+                <div class="lineInput" id="linhaTipo">
+                    <label>Exercicio</label>
+                    <input type="text" id="exercicio" placeholder="nome do exercicio">
+                </div>
+    
+                <div class="lineInput" id="linhaTipo">
+                    <label>Categoria</label>
+                    <!-- <input type="text" id="tipo" placeholder="nome do tipo"> -->
+    
+                    <select name="estado.regiao" id="tipo" class="form-control" required="required"> 
+                        <option value="Peito">Peito</option>
+                        <option value="Biceps">Biceps</option>
+                        <option value="Costas">Costas</option>
+                        <option value="Triceps">Triceps</option>
+                        <option value="Perna">Perna</option>
+                        <option value="Ombro">Ombro</option>
+                    </select>
+                </div>
+    
+                <button onclick="exercicio.salvar()" id="saveEdit" class="butSave">Salvar</button>
+                <button onclick="exercicio.cancelar()" class="cancelar">Cancelar</button>
+            </div>
+        </div>
+        
+
+        <div class="content">
+
+            <table border="0" id="tabela">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Exercicio</th>
+                    <th>Categoria</th>
+                    <th class="center"> Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td class="center">1</td>
+                        <td>treino peito</td>
+                        <td>peito</td>
+                        <td class="center">
+                            <img src="./img/edit.png" alt="deletar">
+                            <img src="./img/delete.png" alt="deletar">
+                        </td>
+                    </tr> -->
+                </tbody>
+
+            </table>
+        </div>
+
+        <!-- <button class="adicionar"> <img src="/img/More.png" alt=""></button> -->
+        
+    </main>
+
+    
+    <!-- <script src="//code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script> -->
+    <script src="/js/exercicios.js"></script>
+    <script src="/js/layout.js"></script>
+</body>
+</html>

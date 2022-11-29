@@ -5,30 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/layout.css">
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <link rel="icon" type="image/x-icon" href="/img/logo.ico">
 
     <title>Pro life Academia</title>
+    
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/financeiro.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/layout.css" />
-
-    <link rel="stylesheet" href="../css/personais.css">
-
-    <!-- ICONS -->
     <script src="https://kit.fontawesome.com/9ede36cb5d.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
 
-    <!-- SIDE MENU -->
-    <nav class="side-menu">
+     <!-- SIDE MENU -->
+     <nav class="side-menu">
         <ul class="menu-contain">
             <li class="menu-opc">
                 <a class="menu-button" href="home.html">
@@ -73,7 +64,7 @@
     <header>
         <ul class="nav-bar">
             <li class="option">
-                <a href="Home">ALUNOS</a>
+                <a href="Home">PRO LIFE ACADEMIA</a>
             </li>
             <li class="option">
                 <a href="#123"><i class="fa-solid fa-bell" onclick="abrir()" ></i></a>
@@ -89,13 +80,13 @@
         <div class="background-config"></div>
 
         <div class="contain">
-
+        
             <div class="config-options">
 
                 <div class="title">CONFIGURAÇÕES</div>
-                <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
-                <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
-
+                    <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
+                
             </div>
 
             <div class="config-footer">
@@ -107,7 +98,7 @@
             </div>
         </div>
     </div>
-<!--NOTIFICAÇÃO-->
+<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||      -->
 <div class="notification" id="notification">
 
     <div class="conteudo">
@@ -155,55 +146,115 @@
             <p class="horario">24:69</p>
         </div>
     </div>
-    
+
 </div>
-    <main class="container">
-        <header class="header-blocos">
-            <div class="botoes-altera-tabela">
-                <div class="div-barra-de-busca">
-                    <input type="text" name="pesquisa" placeholder="Pesquisar...">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-
-                <button class="button-tipo" id="botao-blocos"><i class="fa-solid fa-table-cells"></i></button>
-                <button class="button-tipo active" id="botao-tabela"><i class="fa-solid fa-table-list"></i></button>
-
-            </div>
-        </header>
-
-        <div class="container-personais-conteudo-tabela" id="toda-tabela">
-            <table class="tabela-lista" id="tabela-lista">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Cargo</th>
-                        <th>Salário</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="body-table">
-
-                </tbody>
-            </table>
-
+    <main class="conteiner">
+        <div class="title">
+            <h2>Financeiro</h2>
         </div>
 
-        <div class="container-personais-conteudo-blocos hide" id="tabela-blocos">
-            <div class="blocos-conteudo " id="blocos-conteudo">
+        <div class="selector">
+            
+            <button class="botao-exerc">Janeiro</button>
+            <button class="botao-exerc">Fevereiro</button>
+            <button class="botao-exerc">Março</button>
 
+            <button class="botao-extrato">Imprimir Extrato <img src="/img/Icon Printer.png" alt=""></button>
+        </div>
+
+        <div class="dados">
+
+            <div class="mensalidade">
+                <div class="texto-h1">
+                    <h1>MENSALIDADE</h1>
+                </div>
+                
+                <div class="conteudo">
+
+                    <div class="circulo-mensalidade">
+    
+                        <div class="circular-progress">
+                            <div class="value-container">0%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="dados-texto">
+                        <div class="pagas">
+                            <h2>Pagas</h2>
+                            <br>
+                            <h3>R$7.400,56</h3>
+                            <br>
+                        </div>
+                        <div class="pendentes">
+                            <h2>Pendentes</h2>
+                            <br>
+                            <h3>R$7.400,56</h3>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
-        </div>
-       
-        <div class="img-more-tabela" id="imagem-more-tabela">
-            <div>
-                <i class="fa-solid fa-plus"></i>
+
+            <div class="caixa">
+                <div class="texto-h1">
+                    <h1>PREVISÃO DE CAIXA</h1>
+                </div>
+                
+            
+                <div class="dados-texto-caixa">
+                    <div class="semDespesa">
+                        <h2>SEM DESPESAS</h2>
+                        <h3>R$8.400,56</h3>
+                    </div>
+                    <div class="comDespesa">
+                        <h2>COM DESPESAS</h2>
+                        <h3>R$4.200,45</h3>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="conteudo-table">
+
+            <table class="table-financeiro">
+                <thead>
+                    <th>DESCRIÇÃO</th>
+                    <th>VALOR</th>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Mensalidade,Membro,XXX</td>
+                        <td>+100,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Despesa,XXX</td>
+                        <td>-400,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mensalidade,Membro,XXX</td>
+                        <td>+100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Despesa,XXX</td>
+                        <td>-100,00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        
+        
+
+
+
+
     </main>
 
-    <script src="../js/personais.js"></script>
+    <script src="../js/financeiro.js"></script>
     <script src="../js/layout.js"></script>
 </body>
 

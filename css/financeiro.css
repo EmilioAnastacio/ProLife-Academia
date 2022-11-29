@@ -1,0 +1,215 @@
+body{
+
+}
+
+.conteiner{
+
+    margin-left: 6vw;
+}
+
+.conteiner .selector{
+
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+    align-items: center;
+
+
+}
+
+
+.conteiner .selector button{
+
+    width: 10%;
+    font-size: 14px;
+    max-height: 50px;
+    height: 30px;
+
+    background-color: #fff;
+    color: #004777;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 2px solid #004777;
+}
+
+.conteiner .selector .botao-extrato{
+
+    margin-left: 50%;
+    max-height: 70px;
+    height: 50px;
+    width: 15%;
+
+    align-items: center;
+    display: flex;
+    background-color: #004777;
+    color: #fff;
+    gap: 15px;
+    padding: 0px 10px;
+}
+
+.conteiner .selector .botao-extrato > img{
+
+    width: 20%;
+}
+
+.conteiner .dados{
+
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.conteiner .dados .mensalidade{
+
+    width: 50%;
+    background-color: #f1f1f1;
+    color: #004777;
+    padding: 1%;
+    
+}
+
+.conteiner .dados .mensalidade .conteudo{
+
+    width: 50%;
+    display: flex;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.conteiner .dados .mensalidade .dados-texto{
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.conteiner .dados .mensalidade .dados-texto .pagas > h2{
+
+    color: #00AFB5;
+}
+.conteiner .dados .mensalidade .dados-texto .pagas > h3{
+
+    margin-left: 10%;
+}
+
+.conteiner .dados .mensalidade .dados-texto .pendentes > h2{
+
+    color: #c0281d;
+}
+.conteiner .dados .mensalidade .dados-texto .pendentes > h3{
+
+    margin-left: 10%;
+}
+
+.conteiner .dados .caixa{
+
+    background-color: #00AFB5;
+    width: 50%;
+    color: #fff;
+}
+
+.conteiner .dados .caixa .texto-h1 >h1{
+
+    font-size: 14px;
+    margin: 2%;
+}
+
+.conteiner .dados .caixa .dados-texto-caixa{
+
+    margin: 2%;
+    margin-top: 5%;
+}
+
+.conteiner .dados .caixa .dados-texto-caixa .semDespesa > h2{
+
+    font-size: 12px;
+    margin-left: 5%;
+}
+.conteiner .dados .caixa .dados-texto-caixa .semDespesa {
+
+    width: 100%;
+}
+.conteiner .dados .caixa .dados-texto-caixa .semDespesa > h3{
+
+    font-size: 22px;
+    margin: 5%;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+}
+.conteiner .dados .caixa .dados-texto-caixa .comDespesa > h2{
+
+    font-size: 12px;
+    margin-left: 5%;
+}
+
+.conteiner .dados .caixa .dados-texto-caixa .comDespesa > h3{
+
+    font-size: 22px;
+    margin: 5%;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.circular-progress {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.value-container {
+    position: relative;
+    font-size: 1.5rem;
+    color: #00AFB5;
+}
+
+.conteiner table{
+    border-collapse: collapse;
+    border: 1px solid none;
+    width: 90%;
+
+    margin: 4%;
+
+}
+
+.conteiner thead{
+
+    background-color: #004777;
+    height: 35px;
+    
+}
+
+.conteiner table th{
+    color: #fff;
+
+}
+
+.conteiner table th, td{
+
+    padding: 7px 5px;
+    text-align: left;
+}
+
+.conteiner table tbody tr:nth-child(even){
+
+    background-color: rgb(219, 219, 219);
+}
+
+
