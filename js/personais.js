@@ -57,14 +57,14 @@ function add_itens_tabela() {
   let campos =
   {
     nome: window.prompt("digite o nome").toUpperCase(),
-    cargo: window.prompt("digite o cargo"),
-    salario: window.prompt("digite o salario")
+    cargo: window.prompt("digite o 2 campo"),
+    salario: window.prompt("digite o 3 campoo")
   }
 
   let conteudo = `<td>${contador_personais}</td>
                   <td>${campos.nome}</td>
                   <td>${campos.cargo}</td>
-                  <td>$${campos.salario}</td>
+                  <td>${campos.salario}</td>
                   <td><img class="imagem-editar-abela" id="" src="${campos.url_img}"alt=""></td>`
 
   tr.innerHTML = conteudo
