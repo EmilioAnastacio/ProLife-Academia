@@ -164,11 +164,24 @@ main.container {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    z-index: 100;
 }
 
 .config-options .title {
     font-size: 1.2rem;
     padding: 10%;
+}
+
+.config-options a {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #004777;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .config-options button {
