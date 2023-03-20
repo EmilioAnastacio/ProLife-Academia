@@ -28,9 +28,11 @@
 }
 
 .Sreen-Exercicios{
-    padding: 20px 50px;
-    width: 80%;
-    margin-left: 5%;
+    /* padding: 0 20px 0; */
+    /* padding: 20px 50px; */
+    width: 92.1%;
+    margin-left: 6.7%;
+    margin-top: 2.7%;
 
     display: flex;
     flex-direction: column;
@@ -111,7 +113,7 @@
 
     background-color: rgb(30, 81, 221);
     color: #fff;
-    border-radius: 3px;
+    border-radius: 10px;
     font-weight: bold;
 
     transition: all ease 0.3s;
@@ -120,6 +122,14 @@
 
 .Sreen-Exercicios button:hover{
     background-color: rgb(10, 49, 121);
+}
+.Sreen-Exercicios button.selecionado{
+    background-color: rgb(10, 49, 121);
+
+}
+.Sreen-Exercicios button.deselecionado{
+    background-color: rgb(30, 81, 221);
+
 }
 
 .Sreen-Exercicios .content{
@@ -137,7 +147,7 @@
 .Sreen-Exercicios thead{
 
     background-color: #004777;
-    height: 35px;
+    height: 45px;
     
 }
 
