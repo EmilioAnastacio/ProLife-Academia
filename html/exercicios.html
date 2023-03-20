@@ -32,7 +32,7 @@
             <li class="menu-opc">
                 <a class="menu-button" href="exercicios.html">
                     <i class="fa-solid fa-dumbbell"></i>
-                    <span>EXERCICIOS</span>
+                    <span>EXERCÍCIOS</span>
                 </a>
             </li>
             <li class="menu-opc">
@@ -60,7 +60,7 @@
     <header>
         <ul class="nav-bar">
             <li class="option">
-                <a href="Home">PRO LIFE ACADEMIA</a>
+                <a href="Home">EXERCÍCIOS</a>
             </li>
             <li class="option">
                 <a href="#123"><i class="fa-solid fa-bell" onclick="abrir()" ></i></a>
@@ -80,7 +80,8 @@
             <div class="config-options">
 
                 <div class="title">CONFIGURAÇÕES</div>
-                    <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    <!-- <button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button> -->
+                     <a href="/html/login.html"><button>LOGIN <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
                     <button>NOTIFICAÇÕES <i class="fa-solid fa-bell"></i></button>
                 
             </div>
@@ -151,20 +152,16 @@
     
 
     <main class="Sreen-Exercicios">
-        <div class="title">
-            <h2>Exercicios</h2>
-        </div>
-
+        
         <div class="selector">
 
-            <button class="botao-exerc">Peito</button>
+            <button class="botao-exerc" onclick="this.classList.add('selecionado')">Peito</button>
             <button class="botao-exerc">Biceps</button>
             <button class="botao-exerc">Costas</button>
             <button class="botao-exerc">Triceps</button>
             <button class="botao-exerc">Perna</button>
             <button class="botao-exerc">Ombro</button>
 
-            <img id="add" src="/img/More.png" alt="">
         </div>
 
         <!-- é a porra do meu card -->
