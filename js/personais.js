@@ -73,7 +73,7 @@ function add_itens_tabela() {
 
   let conteudo_blocos = 
   `<div class="img-bloco">
-    <img src="../img/icone.png" alt="">
+    <img src="..../img/icone.png" alt="">
   </div>
 
   <div class="info-person">

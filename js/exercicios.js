@@ -53,11 +53,11 @@ class Exercicio{
             td_id.classList.add('center'); //adiciona a classe via JS
 
             let imgEdit = document.createElement('img');
-            imgEdit.src = '/img/edit.png';
+            imgEdit.src = '../img/edit.png';
             imgEdit.setAttribute("onclick","exercicio.preparaEdit("+ JSON.stringify(this.arrayExercicios[i]) +")");
 
             let imgDelete = document.createElement('img');
-            imgDelete.src = '/img/delete.png';
+            imgDelete.src = '../img/delete.png';
             imgDelete.setAttribute("onclick","exercicio.deletar("+ this.arrayExercicios[i].id +")"); //(evento) (funcao)
 
             td_acoes.appendChild(imgEdit); //addcionando tag do tipo TD= pai, filho img
